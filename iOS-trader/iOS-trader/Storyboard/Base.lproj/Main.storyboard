@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iOS_trader" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash" translatesAutoresizingMaskIntoConstraints="NO" id="dF1-uC-QVR">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="TQJ-EX-Q7o">
+                                <rect key="frame" x="10" y="382" width="300" height="166"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="534" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kLm-JT-3Ad" customClass="customUITextField" customModule="iOS_trader" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="48.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4aA-43-bpt">
+                                        <rect key="frame" x="0.0" y="58.5" width="300" height="49"/>
+                                        <color key="backgroundColor" red="0.60838967560000001" green="0.1121883914" blue="0.1236982122" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Login"/>
+                                        <connections>
+                                            <action selector="loginAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b4D-Ge-0jh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fdk-n4-jcH">
+                                        <rect key="frame" x="0.0" y="117.5" width="300" height="48.5"/>
+                                        <color key="backgroundColor" red="0.0" green="0.25396852130000003" blue="0.31113079900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="SignUp"/>
+                                        <connections>
+                                            <segue destination="Ydp-fr-g29" kind="presentation" modalPresentationStyle="fullScreen" id="prc-JB-rQh"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="166" id="cCL-F2-byu"/>
+                                </constraints>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y6F-bz-GyW" customClass="AppLogo" customModule="iOS_trader" customModuleProvider="target">
+                                <rect key="frame" x="50" y="20" width="220" height="70"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="220" id="4o0-9L-IcR"/>
+                                    <constraint firstAttribute="height" constant="70" id="O7K-pF-DW0"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Y6F-bz-GyW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="07O-eY-mkN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="TQJ-EX-Q7o" secondAttribute="bottom" constant="20" id="5eH-vc-bTx"/>
+                            <constraint firstItem="Y6F-bz-GyW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DsJ-uY-NAl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TQJ-EX-Q7o" secondAttribute="trailing" constant="10" id="amU-pS-Fq7"/>
+                            <constraint firstItem="dF1-uC-QVR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qy5-2b-msg"/>
+                            <constraint firstItem="dF1-uC-QVR" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="s4q-oS-Xrq"/>
+                            <constraint firstItem="TQJ-EX-Q7o" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="sQn-Md-VON"/>
+                            <constraint firstItem="dF1-uC-QVR" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="tTb-Rd-OIY"/>
+                            <constraint firstAttribute="bottom" secondItem="dF1-uC-QVR" secondAttribute="bottom" id="xy7-7S-tDd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="nameTextField" destination="kLm-JT-3Ad" id="h9h-q8-dzg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-366" y="-121"/>
+        </scene>
+        <!--story_signup-->
+        <scene sceneID="5Js-61-Hpo">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Signup-Story" referencedIdentifier="story_signup" id="Ydp-fr-g29" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="2lB-H1-lhf"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w1j-Dy-WNW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="458" y="164"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="kLm-JT-3Ad">
+            <size key="intrinsicContentSize" width="54" height="34"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="splash" width="266.5" height="474"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

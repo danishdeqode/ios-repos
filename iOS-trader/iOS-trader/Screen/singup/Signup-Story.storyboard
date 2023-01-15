@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Singup Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="story_signup" id="Y6W-OH-hqX" customClass="SingupController" customModule="iOS_trader" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Fhx-Ew-mPW">
+                                <rect key="frame" x="10" y="69" width="373" height="749"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lfi-em-Tcj" customClass="AppLogo" customModule="iOS_trader" customModuleProvider="target">
+                                        <rect key="frame" x="76.666666666666686" y="0.0" width="220" height="70"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="70" id="BJY-Th-Clg"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let’s get started" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1bb-Tf-cc6">
+                                        <rect key="frame" x="88.333333333333329" y="80" width="196.33333333333337" height="539"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                        <color key="textColor" name="white"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Account type please" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wNq-3f-Qgb">
+                                        <rect key="frame" x="71.666666666666686" y="629" width="230" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="LiU-mr-Rkj"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" name="whiteSecondry"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7jf-l2-1PG">
+                                        <rect key="frame" x="0.0" y="659" width="373" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="wN7-Yc-reJ"/>
+                                        </constraints>
+                                        <color key="tintColor" name="activeGreen"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Sign up for Live Account">
+                                            <color key="baseBackgroundColor" name="activeGreen"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="ODl-A8-SIt" kind="presentation" modalPresentationStyle="fullScreen" id="ftt-Hs-pH3"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NTV-41-Bd2">
+                                        <rect key="frame" x="0.0" y="709" width="373" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="ulp-n3-Vlu"/>
+                                        </constraints>
+                                        <color key="tintColor" name="activeBlue"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Sign up for Demo Account">
+                                            <color key="baseBackgroundColor" name="activeBlue"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="W1n-5P-Jw5" kind="presentation" modalPresentationStyle="fullScreen" id="PSC-eZ-5yq"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="7jf-l2-1PG" firstAttribute="top" secondItem="wNq-3f-Qgb" secondAttribute="bottom" constant="10" id="1JT-fK-U1L"/>
+                                    <constraint firstAttribute="trailing" secondItem="7jf-l2-1PG" secondAttribute="trailing" id="7dK-hZ-2Cg"/>
+                                    <constraint firstItem="7jf-l2-1PG" firstAttribute="leading" secondItem="Fhx-Ew-mPW" secondAttribute="leading" id="UWm-lT-A6a"/>
+                                    <constraint firstItem="1bb-Tf-cc6" firstAttribute="top" secondItem="lfi-em-Tcj" secondAttribute="bottom" constant="10" id="afN-7N-eun"/>
+                                    <constraint firstAttribute="trailing" secondItem="NTV-41-Bd2" secondAttribute="trailing" id="l0Z-GS-48B"/>
+                                    <constraint firstItem="NTV-41-Bd2" firstAttribute="leading" secondItem="Fhx-Ew-mPW" secondAttribute="leading" id="se3-2t-1wk"/>
+                                    <constraint firstItem="wNq-3f-Qgb" firstAttribute="top" secondItem="1bb-Tf-cc6" secondAttribute="bottom" constant="10" id="u0v-oA-cPt"/>
+                                    <constraint firstItem="lfi-em-Tcj" firstAttribute="top" secondItem="Fhx-Ew-mPW" secondAttribute="top" id="yYx-e7-v4V"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" name="backgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Fhx-Ew-mPW" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="10" id="HoO-2g-JEv"/>
+                            <constraint firstItem="Fhx-Ew-mPW" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="a02-XJ-iME"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Fhx-Ew-mPW" secondAttribute="trailing" constant="10" id="a1e-yy-y8o"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Fhx-Ew-mPW" secondAttribute="bottom" id="iBR-mG-4Yv"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="8Kh-G4-nKq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="983.96946564885491" y="-2.1126760563380285"/>
+        </scene>
+        <!--Demo Controller-->
+        <scene sceneID="n1Q-MU-hJ2">
+            <objects>
+                <viewController storyboardIdentifier="story_signup_demo" id="W1n-5P-Jw5" customClass="DemoController" customModule="iOS_trader" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="K3w-l7-kjh">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="egZ-kL-Ahq">
+                                <rect key="frame" x="10" y="69" width="373" height="749"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y29-Hz-9Tb" customClass="AppLogo" customModule="iOS_trader" customModuleProvider="target">
+                                        <rect key="frame" x="76.666666666666686" y="0.0" width="220" height="70"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="70" id="Wfj-Rb-IOg"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let’s get started" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GBt-BD-KWB">
+                                        <rect key="frame" x="88.333333333333329" y="80" width="196.33333333333337" height="619"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                        <color key="textColor" name="white"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="emp-C9-awF">
+                                        <rect key="frame" x="0.0" y="709" width="373" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="K0q-Ys-yUH"/>
+                                        </constraints>
+                                        <color key="tintColor" name="activeBlue"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Continue"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="y29-Hz-9Tb" firstAttribute="top" secondItem="egZ-kL-Ahq" secondAttribute="top" id="GRE-cw-oG7"/>
+                                    <constraint firstItem="emp-C9-awF" firstAttribute="leading" secondItem="egZ-kL-Ahq" secondAttribute="leading" id="KZR-0O-zPr"/>
+                                    <constraint firstItem="GBt-BD-KWB" firstAttribute="top" secondItem="y29-Hz-9Tb" secondAttribute="bottom" constant="10" id="d1J-Vr-4lH"/>
+                                    <constraint firstAttribute="trailing" secondItem="emp-C9-awF" secondAttribute="trailing" id="pBk-go-cSQ"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bTn-F3-yvu"/>
+                        <color key="backgroundColor" name="backgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bTn-F3-yvu" firstAttribute="trailing" secondItem="egZ-kL-Ahq" secondAttribute="trailing" constant="10" id="MC8-bZ-geO"/>
+                            <constraint firstItem="egZ-kL-Ahq" firstAttribute="top" secondItem="bTn-F3-yvu" secondAttribute="top" constant="10" id="dXf-J5-ezU"/>
+                            <constraint firstItem="egZ-kL-Ahq" firstAttribute="leading" secondItem="bTn-F3-yvu" secondAttribute="leading" constant="10" id="faj-ca-8KE"/>
+                            <constraint firstItem="bTn-F3-yvu" firstAttribute="bottom" secondItem="egZ-kL-Ahq" secondAttribute="bottom" id="w2z-NI-khI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="8Ur-i5-5ZV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qha-cV-rAZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1830" y="327"/>
+        </scene>
+        <!--Live Controller-->
+        <scene sceneID="R9Y-PB-mVk">
+            <objects>
+                <viewController storyboardIdentifier="story_signup_live" id="ODl-A8-SIt" customClass="LiveController" customModule="iOS_trader" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rf1-WF-dob">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="a7v-bG-tne">
+                                <rect key="frame" x="10" y="69" width="373" height="749"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eel-Rr-H59" customClass="AppLogo" customModule="iOS_trader" customModuleProvider="target">
+                                        <rect key="frame" x="76.666666666666686" y="0.0" width="220" height="70"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="70" id="gpZ-80-6cT"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let’s get started" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iSv-yX-gu9">
+                                        <rect key="frame" x="88.333333333333329" y="80" width="196.33333333333337" height="619"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                        <color key="textColor" name="white"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ar-oA-ZJA">
+                                        <rect key="frame" x="0.0" y="709" width="373" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="iYv-lT-X3X"/>
+                                        </constraints>
+                                        <color key="tintColor" name="activeBlue"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Continue">
+                                            <color key="baseBackgroundColor" name="activeGreen"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="iSv-yX-gu9" firstAttribute="top" secondItem="eel-Rr-H59" secondAttribute="bottom" constant="10" id="6BV-IC-OH1"/>
+                                    <constraint firstItem="eel-Rr-H59" firstAttribute="top" secondItem="a7v-bG-tne" secondAttribute="top" id="BRB-x0-A4j"/>
+                                    <constraint firstAttribute="trailing" secondItem="9ar-oA-ZJA" secondAttribute="trailing" id="q6P-7R-7ln"/>
+                                    <constraint firstItem="9ar-oA-ZJA" firstAttribute="leading" secondItem="a7v-bG-tne" secondAttribute="leading" id="tvh-mF-HT1"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="PZX-bQ-vqz"/>
+                        <color key="backgroundColor" name="backgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PZX-bQ-vqz" firstAttribute="bottom" secondItem="a7v-bG-tne" secondAttribute="bottom" id="Jl9-qU-vzd"/>
+                            <constraint firstItem="a7v-bG-tne" firstAttribute="leading" secondItem="PZX-bQ-vqz" secondAttribute="leading" constant="10" id="TIX-jp-7gy"/>
+                            <constraint firstItem="PZX-bQ-vqz" firstAttribute="trailing" secondItem="a7v-bG-tne" secondAttribute="trailing" constant="10" id="YiU-VL-J4Y"/>
+                            <constraint firstItem="a7v-bG-tne" firstAttribute="top" secondItem="PZX-bQ-vqz" secondAttribute="top" constant="10" id="avi-xH-m1D"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="uat-OV-s13"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SRw-39-84v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1830" y="-328"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="activeBlue">
+            <color red="0.18799999356269836" green="0.41200000047683716" blue="0.86699998378753662" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="activeGreen">
+            <color red="0.17299999296665192" green="0.79199999570846558" blue="0.68599998950958252" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="backgroundColor">
+            <color red="0.13500000536441803" green="0.13699999451637268" blue="0.13699999451637268" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="white">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="whiteSecondry">
+            <color red="0.93699997663497925" green="0.92699998617172241" blue="0.92599999904632568" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

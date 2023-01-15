@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AppLogo" customModule="iOS_trader" customModuleProvider="target">
+            <connections>
+                <outlet property="containerView" destination="iN0-l3-epB" id="cxp-GI-wlT"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="220" height="107"/>
+            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="x3f-hU-xxC">
+                    <rect key="frame" x="0.0" y="0.0" width="220" height="70"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MyAppName" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uwj-RS-SHx">
+                    <rect key="frame" x="0.0" y="78" width="220" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="x3f-hU-xxC" secondAttribute="trailing" id="5bV-K3-J7i"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Uwj-RS-SHx" secondAttribute="bottom" constant="8" id="F0r-BG-cEj"/>
+                <constraint firstItem="Uwj-RS-SHx" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="HAQ-eY-QSt"/>
+                <constraint firstItem="x3f-hU-xxC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Ltb-CU-ufU"/>
+                <constraint firstItem="Uwj-RS-SHx" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="NpC-jA-lpE"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Uwj-RS-SHx" secondAttribute="trailing" id="U5N-ql-sZk"/>
+                <constraint firstItem="Uwj-RS-SHx" firstAttribute="top" secondItem="x3f-hU-xxC" secondAttribute="bottom" constant="8" id="fof-SL-gYe"/>
+                <constraint firstItem="x3f-hU-xxC" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="sWb-RW-79g"/>
+                <constraint firstItem="x3f-hU-xxC" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="ufb-rv-FJT"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-115.26717557251908" y="-243.3098591549296"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="logo" width="400" height="184.66667175292969"/>
+    </resources>
+</document>
