@@ -22,4 +22,5 @@ class SingupLiveEmailController: UIViewController {
         print("controller called")
     }
     
+    
 }

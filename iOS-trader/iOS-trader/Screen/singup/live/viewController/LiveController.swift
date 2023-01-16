@@ -26,22 +26,5 @@ class LiveController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
-    
-    @IBAction func signupNameContinue(_ sender: UIButton) {
-        print("3")
-    }
-    
-    @IBAction func signupPasswordContinue(_ sender: UIButton) {
-        print("2")
-    }
-    
-    @IBAction func signupEmailContinue(_ sender: UIButton) {
-        print("1")
-    }
-    
-    @IBAction func signupDOBContinue(_ sender: UIButton) {
-        print("4")
-    }
     
 }

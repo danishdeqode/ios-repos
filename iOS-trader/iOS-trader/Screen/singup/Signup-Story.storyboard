@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Fhx-Ew-mPW">
-                                <rect key="frame" x="10" y="98" width="394" height="764"/>
+                                <rect key="frame" x="10" y="54" width="394" height="808"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lfi-em-Tcj" customClass="AppLogo" customModule="iOS_trader" customModuleProvider="target">
                                         <rect key="frame" x="87" y="0.0" width="220" height="70"/>
@@ -28,13 +28,13 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let’s get started" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1bb-Tf-cc6">
-                                        <rect key="frame" x="99" y="80" width="196.5" height="554"/>
+                                        <rect key="frame" x="99" y="80" width="196.5" height="598"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
                                         <color key="textColor" name="white"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Account type please" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wNq-3f-Qgb">
-                                        <rect key="frame" x="82" y="644" width="230" height="20"/>
+                                        <rect key="frame" x="82" y="688" width="230" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="LiU-mr-Rkj"/>
                                         </constraints>
@@ -43,7 +43,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7jf-l2-1PG">
-                                        <rect key="frame" x="0.0" y="674" width="394" height="40"/>
+                                        <rect key="frame" x="0.0" y="718" width="394" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="wN7-Yc-reJ"/>
                                         </constraints>
@@ -58,7 +58,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NTV-41-Bd2">
-                                        <rect key="frame" x="0.0" y="724" width="394" height="40"/>
+                                        <rect key="frame" x="0.0" y="768" width="394" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="ulp-n3-Vlu"/>
                                         </constraints>
@@ -203,8 +203,7 @@
                                     <color key="baseBackgroundColor" name="activeGreen"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="signupEmailContinue:" destination="ODl-A8-SIt" eventType="touchUpInside" id="oLR-I9-QJs"/>
-                                    <segue destination="l23-w4-hFD" kind="presentation" modalPresentationStyle="overFullScreen" modalTransitionStyle="coverVertical" id="LRY-H0-gid"/>
+                                    <segue destination="l23-w4-hFD" kind="presentation" modalPresentationStyle="fullScreen" id="1tM-ak-35F"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -286,8 +285,7 @@
                                     <color key="baseBackgroundColor" name="activeGreen"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="signupPasswordContinue:" destination="l23-w4-hFD" eventType="touchUpInside" id="4ht-up-xzk"/>
-                                    <segue destination="feg-2C-GZr" kind="presentation" modalPresentationStyle="fullScreen" id="mCL-1U-ptI"/>
+                                    <segue destination="feg-2C-GZr" kind="presentation" modalPresentationStyle="fullScreen" id="avR-hN-y5V"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -372,7 +370,6 @@
                                     <color key="baseBackgroundColor" name="activeGreen"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="signupNameContinue:" destination="feg-2C-GZr" eventType="touchUpInside" id="t9l-sq-ydQ"/>
                                     <segue destination="iya-2q-tOh" kind="presentation" modalPresentationStyle="fullScreen" id="D8p-me-rZg"/>
                                 </connections>
                             </button>
@@ -458,7 +455,7 @@
                                     <color key="baseBackgroundColor" name="activeGreen"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="signupDOBContinue:" destination="iya-2q-tOh" eventType="touchUpInside" id="o2f-xE-5Oq"/>
+                                    <segue destination="nJG-Al-hla" kind="presentation" modalPresentationStyle="fullScreen" id="eyd-9d-FJm"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -486,28 +483,10 @@
             </objects>
             <point key="canvasLocation" x="4871.0144927536239" y="-328.125"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="a5J-WX-sJR">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pgD-Mh-gqX" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Kgq-a7-QFA">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="CNL-5h-S0u"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="go5-C8-YYn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="982.60869565217399" y="-2.6785714285714284"/>
-        </scene>
         <!--Singup Live Country Controller-->
         <scene sceneID="C1X-76-yBz">
             <objects>
-                <viewController storyboardIdentifier="story_signup_dob" id="nJG-Al-hla" customClass="SingupLiveCountryController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="story_signup_country" id="nJG-Al-hla" customClass="SingupLiveCountryController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yxf-Ig-fQi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -560,9 +539,6 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Continue">
                                     <color key="baseBackgroundColor" name="activeGreen"/>
                                 </buttonConfiguration>
-                                <connections>
-                                    <action selector="signupDOBContinue:" destination="nJG-Al-hla" eventType="touchUpInside" id="DCX-Cz-kea"/>
-                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="NlO-8s-7Md"/>

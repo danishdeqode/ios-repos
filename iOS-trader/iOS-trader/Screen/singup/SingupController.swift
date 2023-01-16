@@ -17,9 +17,9 @@ class SingupController: UIViewController {
     }
     
     @IBAction func doSignup(_ sender: UIButton) {
-        let secondViewController = self.storyboard.instantiateViewControllerWithIdentifier("SecondViewController") as SecondViewController
-        self.navigationController.pushViewController(secondViewController, animated: true)
-        SingupController
+//        let secondViewController = self.storyboard.instantiateViewControllerWithIdentifier("SecondViewController") as SecondViewController
+//        self.navigationController.pushViewController(secondViewController, animated: true)
+//        SingupController
     }
     
     
