@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -15,27 +14,27 @@
             <objects>
                 <viewController storyboardIdentifier="story_signup" id="Y6W-OH-hqX" customClass="SingupController" customModule="iOS_trader" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Fhx-Ew-mPW">
-                                <rect key="frame" x="10" y="69" width="373" height="749"/>
+                                <rect key="frame" x="10" y="98" width="394" height="764"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lfi-em-Tcj" customClass="AppLogo" customModule="iOS_trader" customModuleProvider="target">
-                                        <rect key="frame" x="76.666666666666686" y="0.0" width="220" height="70"/>
+                                        <rect key="frame" x="87" y="0.0" width="220" height="70"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="lessThanOrEqual" constant="70" id="BJY-Th-Clg"/>
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let’s get started" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1bb-Tf-cc6">
-                                        <rect key="frame" x="88.333333333333329" y="80" width="196.33333333333337" height="539"/>
+                                        <rect key="frame" x="99" y="80" width="196.5" height="554"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
                                         <color key="textColor" name="white"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Account type please" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wNq-3f-Qgb">
-                                        <rect key="frame" x="71.666666666666686" y="629" width="230" height="20"/>
+                                        <rect key="frame" x="82" y="644" width="230" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="LiU-mr-Rkj"/>
                                         </constraints>
@@ -44,7 +43,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7jf-l2-1PG">
-                                        <rect key="frame" x="0.0" y="659" width="373" height="40"/>
+                                        <rect key="frame" x="0.0" y="674" width="394" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="wN7-Yc-reJ"/>
                                         </constraints>
@@ -54,11 +53,12 @@
                                             <color key="baseBackgroundColor" name="activeGreen"/>
                                         </buttonConfiguration>
                                         <connections>
+                                            <action selector="doSignup:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="OPC-S9-gRZ"/>
                                             <segue destination="ODl-A8-SIt" kind="presentation" modalPresentationStyle="fullScreen" id="ftt-Hs-pH3"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NTV-41-Bd2">
-                                        <rect key="frame" x="0.0" y="709" width="373" height="40"/>
+                                        <rect key="frame" x="0.0" y="724" width="394" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="ulp-n3-Vlu"/>
                                         </constraints>
@@ -97,34 +97,34 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="983.96946564885491" y="-2.1126760563380285"/>
+            <point key="canvasLocation" x="1892.753623188406" y="-2.6785714285714284"/>
         </scene>
         <!--Demo Controller-->
         <scene sceneID="n1Q-MU-hJ2">
             <objects>
                 <viewController storyboardIdentifier="story_signup_demo" id="W1n-5P-Jw5" customClass="DemoController" customModule="iOS_trader" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="K3w-l7-kjh">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="egZ-kL-Ahq">
-                                <rect key="frame" x="10" y="69" width="373" height="749"/>
+                                <rect key="frame" x="10" y="54" width="394" height="808"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y29-Hz-9Tb" customClass="AppLogo" customModule="iOS_trader" customModuleProvider="target">
-                                        <rect key="frame" x="76.666666666666686" y="0.0" width="220" height="70"/>
+                                        <rect key="frame" x="87" y="0.0" width="220" height="70"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="lessThanOrEqual" constant="70" id="Wfj-Rb-IOg"/>
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let’s get started" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GBt-BD-KWB">
-                                        <rect key="frame" x="88.333333333333329" y="80" width="196.33333333333337" height="619"/>
+                                        <rect key="frame" x="99" y="80" width="196.5" height="678"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
                                         <color key="textColor" name="white"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="emp-C9-awF">
-                                        <rect key="frame" x="0.0" y="709" width="373" height="40"/>
+                                        <rect key="frame" x="0.0" y="768" width="394" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="K0q-Ys-yUH"/>
                                         </constraints>
@@ -154,18 +154,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qha-cV-rAZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1830" y="327"/>
+            <point key="canvasLocation" x="2739.130434782609" y="326.78571428571428"/>
         </scene>
-        <!--Live Controller-->
+        <!--Singup Live Email Controller-->
         <scene sceneID="R9Y-PB-mVk">
             <objects>
-                <viewController storyboardIdentifier="story_signup_email" id="ODl-A8-SIt" customClass="LiveController" customModule="iOS_trader" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="story_signup_email" id="ODl-A8-SIt" customClass="SingupLiveEmailController" customModule="iOS_trader" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rf1-WF-dob">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eel-Rr-H59" customClass="AppLogo" customModule="iOS_trader" customModuleProvider="target">
-                                <rect key="frame" x="86.666666666666686" y="69" width="220" height="70"/>
+                                <rect key="frame" x="97" y="54" width="220" height="70"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="UvU-3u-wqF"/>
@@ -174,7 +174,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N5R-7D-v53">
-                                <rect key="frame" x="166" y="179" width="61" height="24"/>
+                                <rect key="frame" x="176.5" y="164" width="61" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="Col-Di-FjE"/>
                                 </constraints>
@@ -183,8 +183,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5ct-ru-0x1">
-                                <rect key="frame" x="10" y="223" width="373" height="40"/>
-                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="10" y="208" width="394" height="40"/>
+                                <color key="backgroundColor" red="0.19261239998710983" green="0.25080404771507059" blue="0.26801439996847176" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" systemColor="secondarySystemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="tNU-z2-DKZ"/>
@@ -193,7 +193,7 @@
                                 <textInputTraits key="textInputTraits" returnKeyType="continue" textContentType="email"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ar-oA-ZJA">
-                                <rect key="frame" x="10" y="768" width="373" height="40"/>
+                                <rect key="frame" x="10" y="812" width="394" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="iYv-lT-X3X"/>
                                 </constraints>
@@ -227,18 +227,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SRw-39-84v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1830" y="-328"/>
+            <point key="canvasLocation" x="2739.130434782609" y="-328.125"/>
         </scene>
-        <!--Live Controller-->
+        <!--Singup Live Password Controller-->
         <scene sceneID="ro9-db-tyY">
             <objects>
-                <viewController storyboardIdentifier="story_signup_password" id="l23-w4-hFD" customClass="LiveController" customModule="iOS_trader" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="story_signup_password" id="l23-w4-hFD" customClass="SingupLivePasswordController" customModule="iOS_trader" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3bT-Zi-UqN">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FXH-h4-lsU" customClass="AppLogo" customModule="iOS_trader" customModuleProvider="target">
-                                <rect key="frame" x="86.666666666666686" y="69" width="220" height="70"/>
+                                <rect key="frame" x="97" y="54" width="220" height="70"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="70" id="Fod-HK-khi"/>
@@ -247,7 +247,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zxn-Uw-ZRL">
-                                <rect key="frame" x="142" y="179" width="109.33333333333331" height="24"/>
+                                <rect key="frame" x="152.5" y="164" width="109" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="8dQ-YY-X0a"/>
                                 </constraints>
@@ -256,7 +256,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="phW-gC-918">
-                                <rect key="frame" x="10" y="223" width="373" height="40"/>
+                                <rect key="frame" x="10" y="208" width="394" height="40"/>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" systemColor="secondarySystemBackgroundColor"/>
                                 <constraints>
@@ -266,7 +266,7 @@
                                 <textInputTraits key="textInputTraits" returnKeyType="continue" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bat-uf-dT4">
-                                <rect key="frame" x="10" y="283" width="373" height="40"/>
+                                <rect key="frame" x="10" y="268" width="394" height="40"/>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" systemColor="secondarySystemBackgroundColor"/>
                                 <constraints>
@@ -276,7 +276,7 @@
                                 <textInputTraits key="textInputTraits" returnKeyType="continue" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cvh-hG-p4z">
-                                <rect key="frame" x="10" y="768" width="373" height="40"/>
+                                <rect key="frame" x="10" y="812" width="394" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="I9E-g0-I3v"/>
                                 </constraints>
@@ -313,18 +313,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hkW-y9-F4d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2532" y="-328"/>
+            <point key="canvasLocation" x="3442.0289855072465" y="-328.125"/>
         </scene>
-        <!--Live Controller-->
+        <!--Singup Live Name Controller-->
         <scene sceneID="71I-cI-f6e">
             <objects>
-                <viewController storyboardIdentifier="story_signup_name" id="feg-2C-GZr" customClass="LiveController" customModule="iOS_trader" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="story_signup_name" id="feg-2C-GZr" customClass="SingupLiveNameController" customModule="iOS_trader" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="e4y-h4-wEq">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zv2-XV-VJY" customClass="AppLogo" customModule="iOS_trader" customModuleProvider="target">
-                                <rect key="frame" x="86.666666666666686" y="69" width="220" height="70"/>
+                                <rect key="frame" x="97" y="54" width="220" height="70"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="220" id="6B6-Pb-Tjp"/>
@@ -333,7 +333,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3oq-8g-fmj">
-                                <rect key="frame" x="164" y="179" width="65.333333333333314" height="24"/>
+                                <rect key="frame" x="174.5" y="164" width="65" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="WPL-0I-XCc"/>
                                 </constraints>
@@ -342,7 +342,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ssf-dW-x5v">
-                                <rect key="frame" x="10" y="223" width="373" height="40"/>
+                                <rect key="frame" x="10" y="208" width="394" height="40"/>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" systemColor="secondarySystemBackgroundColor"/>
                                 <constraints>
@@ -352,7 +352,7 @@
                                 <textInputTraits key="textInputTraits" returnKeyType="continue" secureTextEntry="YES" textContentType="name"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qR8-sW-Y7R">
-                                <rect key="frame" x="10" y="283" width="373" height="40"/>
+                                <rect key="frame" x="10" y="268" width="394" height="40"/>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" systemColor="secondarySystemBackgroundColor"/>
                                 <constraints>
@@ -362,7 +362,7 @@
                                 <textInputTraits key="textInputTraits" returnKeyType="continue" textContentType="family-name"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oWA-2c-2YZ">
-                                <rect key="frame" x="10" y="768" width="373" height="40"/>
+                                <rect key="frame" x="10" y="812" width="394" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="hlg-nk-iUa"/>
                                 </constraints>
@@ -399,18 +399,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R0D-IM-S7P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3263" y="-328"/>
+            <point key="canvasLocation" x="4172.463768115942" y="-328.125"/>
         </scene>
-        <!--Live Controller-->
+        <!--Singup LiveDOB Controller-->
         <scene sceneID="V0T-RJ-wmf">
             <objects>
-                <viewController storyboardIdentifier="story_signup_dob" id="iya-2q-tOh" customClass="LiveController" customModule="iOS_trader" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="story_signup_dob" id="iya-2q-tOh" customClass="SingupLiveDOBController" customModule="iOS_trader" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qd4-3q-APW">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k8Z-HG-grO" customClass="AppLogo" customModule="iOS_trader" customModuleProvider="target">
-                                <rect key="frame" x="86.666666666666686" y="69" width="220" height="70"/>
+                                <rect key="frame" x="97" y="54" width="220" height="70"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="DrA-EZ-vRj"/>
@@ -419,7 +419,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DOB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kaM-u6-Crx">
-                                <rect key="frame" x="171" y="179" width="51.333333333333343" height="24"/>
+                                <rect key="frame" x="181.5" y="164" width="51" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="XLs-Ra-zSl"/>
                                 </constraints>
@@ -428,7 +428,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="URo-E8-shS">
-                                <rect key="frame" x="10" y="223" width="373" height="40"/>
+                                <rect key="frame" x="10" y="208" width="394" height="40"/>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" systemColor="secondarySystemBackgroundColor"/>
                                 <constraints>
@@ -438,7 +438,7 @@
                                 <textInputTraits key="textInputTraits" returnKeyType="continue" secureTextEntry="YES" textContentType="name"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0A1-SD-B9x">
-                                <rect key="frame" x="10" y="283" width="373" height="40"/>
+                                <rect key="frame" x="10" y="268" width="394" height="40"/>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" systemColor="secondarySystemBackgroundColor"/>
                                 <constraints>
@@ -448,7 +448,7 @@
                                 <textInputTraits key="textInputTraits" returnKeyType="continue" textContentType="family-name"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YbE-Kx-1ZD">
-                                <rect key="frame" x="10" y="768" width="373" height="40"/>
+                                <rect key="frame" x="10" y="812" width="394" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="th7-x2-CHU"/>
                                 </constraints>
@@ -484,7 +484,110 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CHG-Fh-09K" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3961" y="-328"/>
+            <point key="canvasLocation" x="4871.0144927536239" y="-328.125"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="a5J-WX-sJR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pgD-Mh-gqX" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Kgq-a7-QFA">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="CNL-5h-S0u"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="go5-C8-YYn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="982.60869565217399" y="-2.6785714285714284"/>
+        </scene>
+        <!--Singup Live Country Controller-->
+        <scene sceneID="C1X-76-yBz">
+            <objects>
+                <viewController storyboardIdentifier="story_signup_dob" id="nJG-Al-hla" customClass="SingupLiveCountryController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yxf-Ig-fQi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kZb-WA-nzn" customClass="AppLogo" customModule="iOS_trader" customModuleProvider="target">
+                                <rect key="frame" x="97" y="54" width="220" height="70"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="220" id="OBA-Xr-Pol"/>
+                                    <constraint firstAttribute="height" constant="70" id="lIV-MO-M3I"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="70" id="rSY-1f-5SM"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gBZ-gs-9Ql">
+                                <rect key="frame" x="161" y="164" width="92" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="VwG-Vj-Ztn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" name="white"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ccH-PW-oRY">
+                                <rect key="frame" x="10" y="208" width="394" height="40"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" systemColor="secondarySystemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="h5l-PC-dr6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="continue" secureTextEntry="YES" textContentType="name"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LEb-H0-yB8">
+                                <rect key="frame" x="10" y="268" width="394" height="40"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" systemColor="secondarySystemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="55b-TI-ogv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="continue" textContentType="family-name"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X95-xP-PNe">
+                                <rect key="frame" x="10" y="812" width="394" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Cc4-Dw-f34"/>
+                                </constraints>
+                                <color key="tintColor" name="activeBlue"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Continue">
+                                    <color key="baseBackgroundColor" name="activeGreen"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="signupDOBContinue:" destination="nJG-Al-hla" eventType="touchUpInside" id="DCX-Cz-kea"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NlO-8s-7Md"/>
+                        <color key="backgroundColor" name="backgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gBZ-gs-9Ql" firstAttribute="centerX" secondItem="yxf-Ig-fQi" secondAttribute="centerX" id="7dE-r7-xMK"/>
+                            <constraint firstItem="ccH-PW-oRY" firstAttribute="top" secondItem="gBZ-gs-9Ql" secondAttribute="bottom" constant="20" id="8gg-GX-t5Q"/>
+                            <constraint firstItem="NlO-8s-7Md" firstAttribute="bottom" secondItem="X95-xP-PNe" secondAttribute="bottom" constant="10" id="GmN-iu-Wgp"/>
+                            <constraint firstItem="NlO-8s-7Md" firstAttribute="trailing" secondItem="X95-xP-PNe" secondAttribute="trailing" constant="10" id="O3A-EN-Wdz"/>
+                            <constraint firstItem="kZb-WA-nzn" firstAttribute="top" secondItem="NlO-8s-7Md" secondAttribute="top" constant="10" id="Trd-lM-Yod"/>
+                            <constraint firstItem="NlO-8s-7Md" firstAttribute="trailing" secondItem="ccH-PW-oRY" secondAttribute="trailing" constant="10" id="WbQ-QY-5uk"/>
+                            <constraint firstItem="LEb-H0-yB8" firstAttribute="leading" secondItem="NlO-8s-7Md" secondAttribute="leading" constant="10" id="bsZ-bf-7IZ"/>
+                            <constraint firstItem="NlO-8s-7Md" firstAttribute="trailing" secondItem="LEb-H0-yB8" secondAttribute="trailing" constant="10" id="c6m-yc-RGm"/>
+                            <constraint firstItem="gBZ-gs-9Ql" firstAttribute="top" secondItem="kZb-WA-nzn" secondAttribute="bottom" constant="40" id="hJe-mo-9ZM"/>
+                            <constraint firstItem="LEb-H0-yB8" firstAttribute="top" secondItem="ccH-PW-oRY" secondAttribute="bottom" constant="20" id="jbc-0z-9Of"/>
+                            <constraint firstItem="kZb-WA-nzn" firstAttribute="centerX" secondItem="yxf-Ig-fQi" secondAttribute="centerX" id="oQJ-Ci-ikU"/>
+                            <constraint firstItem="X95-xP-PNe" firstAttribute="leading" secondItem="NlO-8s-7Md" secondAttribute="leading" constant="10" id="rFT-mN-Por"/>
+                            <constraint firstItem="ccH-PW-oRY" firstAttribute="leading" secondItem="NlO-8s-7Md" secondAttribute="leading" constant="10" id="wp5-sB-uDQ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="nUY-Kp-zpv"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fM4-yX-AeX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5586" y="-328"/>
         </scene>
     </scenes>
     <resources>

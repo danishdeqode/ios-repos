@@ -12,8 +12,16 @@ class SingupController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        let liveHelper = SingupLiveHelper.shared
+        let demoHelper = SingupDemoHelper.shared
     }
+    
+    @IBAction func doSignup(_ sender: UIButton) {
+        let secondViewController = self.storyboard.instantiateViewControllerWithIdentifier("SecondViewController") as SecondViewController
+        self.navigationController.pushViewController(secondViewController, animated: true)
+        SingupController
+    }
+    
     
 
     /*

@@ -1,13 +1,13 @@
 //
-//  LiveController.swift
+//  singupLiveDOBController.swift
 //  iOS-trader
 //
-//  Created by danish on 15/01/23.
+//  Created by deq on 16/01/23.
 //
 
 import UIKit
 
-class LiveController: UIViewController {
+class SingupLiveDOBController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,21 +26,4 @@ class LiveController: UIViewController {
     }
     */
 
-    
-    @IBAction func signupNameContinue(_ sender: UIButton) {
-        print("3")
-    }
-    
-    @IBAction func signupPasswordContinue(_ sender: UIButton) {
-        print("2")
-    }
-    
-    @IBAction func signupEmailContinue(_ sender: UIButton) {
-        print("1")
-    }
-    
-    @IBAction func signupDOBContinue(_ sender: UIButton) {
-        print("4")
-    }
-    
 }

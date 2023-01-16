@@ -15,12 +15,19 @@
 		0745274529731D040059DF1E /* AppLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0745274429731D040059DF1E /* AppLogo.swift */; };
 		07949FEE296C71570071F149 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07949FED296C71570071F149 /* AppDelegate.swift */; };
 		07949FF0296C71570071F149 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07949FEF296C71570071F149 /* SceneDelegate.swift */; };
-		07949FF2296C71570071F149 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07949FF1296C71570071F149 /* ViewController.swift */; };
+		07949FF2296C71570071F149 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07949FF1296C71570071F149 /* MainController.swift */; };
 		07949FF5296C71570071F149 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07949FF3296C71570071F149 /* Main.storyboard */; };
 		07949FF7296C71580071F149 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07949FF6296C71580071F149 /* Assets.xcassets */; };
 		07949FFA296C71580071F149 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07949FF8296C71580071F149 /* LaunchScreen.storyboard */; };
 		0794A010296C7B570071F149 /* LogoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0794A00E296C7B570071F149 /* LogoViewController.swift */; };
 		0794A011296C7B570071F149 /* LogoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0794A00F296C7B570071F149 /* LogoViewController.xib */; };
+		C31D0F5029752EBF00BF79C9 /* SingupLiveHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31D0F4F29752EBF00BF79C9 /* SingupLiveHelper.swift */; };
+		C31D0F5329752EEA00BF79C9 /* SingupDemoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31D0F5229752EEA00BF79C9 /* SingupDemoHelper.swift */; };
+		C31D0F56297539AD00BF79C9 /* singupLiveEmailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31D0F55297539AD00BF79C9 /* singupLiveEmailController.swift */; };
+		C3B5C07429757EAA0087E3A4 /* singupLiveNameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B5C07329757EAA0087E3A4 /* singupLiveNameController.swift */; };
+		C3B5C07629757EBB0087E3A4 /* singupLivePasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B5C07529757EBB0087E3A4 /* singupLivePasswordController.swift */; };
+		C3B5C07829757ECA0087E3A4 /* singupLiveDOBController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B5C07729757EC90087E3A4 /* singupLiveDOBController.swift */; };
+		C3B5C07A29757EDA0087E3A4 /* singupLiveCountyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B5C07929757EDA0087E3A4 /* singupLiveCountyController.swift */; };
 		C3B93B01296D8F6D00FED50F /* TextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B93B00296D8F6D00FED50F /* TextFieldExtension.swift */; };
 		C3EFDBB5296D7BA000D382A3 /* AppTextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3EFDBB4296D7BA000D382A3 /* AppTextField.xib */; };
 		C3EFDBB7296D7BFD00D382A3 /* AppTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EFDBB6296D7BFD00D382A3 /* AppTextField.swift */; };
@@ -36,13 +43,20 @@
 		07949FEA296C71570071F149 /* iOS-trader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-trader.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		07949FED296C71570071F149 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07949FEF296C71570071F149 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		07949FF1296C71570071F149 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		07949FF1296C71570071F149 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 		07949FF4296C71570071F149 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		07949FF6296C71580071F149 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07949FF9296C71580071F149 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		07949FFB296C71580071F149 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0794A00E296C7B570071F149 /* LogoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoViewController.swift; sourceTree = "<group>"; };
 		0794A00F296C7B570071F149 /* LogoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogoViewController.xib; sourceTree = "<group>"; };
+		C31D0F4F29752EBF00BF79C9 /* SingupLiveHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingupLiveHelper.swift; sourceTree = "<group>"; };
+		C31D0F5229752EEA00BF79C9 /* SingupDemoHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingupDemoHelper.swift; sourceTree = "<group>"; };
+		C31D0F55297539AD00BF79C9 /* singupLiveEmailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = singupLiveEmailController.swift; sourceTree = "<group>"; };
+		C3B5C07329757EAA0087E3A4 /* singupLiveNameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = singupLiveNameController.swift; sourceTree = "<group>"; };
+		C3B5C07529757EBB0087E3A4 /* singupLivePasswordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = singupLivePasswordController.swift; sourceTree = "<group>"; };
+		C3B5C07729757EC90087E3A4 /* singupLiveDOBController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = singupLiveDOBController.swift; sourceTree = "<group>"; };
+		C3B5C07929757EDA0087E3A4 /* singupLiveCountyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = singupLiveCountyController.swift; sourceTree = "<group>"; };
 		C3B93B00296D8F6D00FED50F /* TextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldExtension.swift; sourceTree = "<group>"; };
 		C3EFDBB4296D7BA000D382A3 /* AppTextField.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppTextField.xib; sourceTree = "<group>"; };
 		C3EFDBB6296D7BFD00D382A3 /* AppTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTextField.swift; sourceTree = "<group>"; };
@@ -74,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				07356DE92973CE3B00F86B0F /* DemoController.swift */,
+				C31D0F5229752EEA00BF79C9 /* SingupDemoHelper.swift */,
 			);
 			path = demo;
 			sourceTree = "<group>";
@@ -81,7 +96,8 @@
 		071815292973315500F906F8 /* live */ = {
 			isa = PBXGroup;
 			children = (
-				07356DEB2973CF4400F86B0F /* LiveController.swift */,
+				C31D0F542975396D00BF79C9 /* viewController */,
+				C31D0F4F29752EBF00BF79C9 /* SingupLiveHelper.swift */,
 			);
 			path = live;
 			sourceTree = "<group>";
@@ -138,7 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				071815272973313E00F906F8 /* singup */,
-				07949FF1296C71570071F149 /* ViewController.swift */,
+				07949FF1296C71570071F149 /* MainController.swift */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -177,6 +193,19 @@
 				0794A00F296C7B570071F149 /* LogoViewController.xib */,
 			);
 			path = Logo;
+			sourceTree = "<group>";
+		};
+		C31D0F542975396D00BF79C9 /* viewController */ = {
+			isa = PBXGroup;
+			children = (
+				07356DEB2973CF4400F86B0F /* LiveController.swift */,
+				C31D0F55297539AD00BF79C9 /* singupLiveEmailController.swift */,
+				C3B5C07329757EAA0087E3A4 /* singupLiveNameController.swift */,
+				C3B5C07529757EBB0087E3A4 /* singupLivePasswordController.swift */,
+				C3B5C07729757EC90087E3A4 /* singupLiveDOBController.swift */,
+				C3B5C07929757EDA0087E3A4 /* singupLiveCountyController.swift */,
+			);
+			path = viewController;
 			sourceTree = "<group>";
 		};
 		C3B93AFF296D8F5C00FED50F /* Helper */ = {
@@ -271,13 +300,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07949FF2296C71570071F149 /* ViewController.swift in Sources */,
+				07949FF2296C71570071F149 /* MainController.swift in Sources */,
+				C3B5C07629757EBB0087E3A4 /* singupLivePasswordController.swift in Sources */,
 				07356DEC2973CF4400F86B0F /* LiveController.swift in Sources */,
 				07949FEE296C71570071F149 /* AppDelegate.swift in Sources */,
 				0745274529731D040059DF1E /* AppLogo.swift in Sources */,
 				0718152D2973335F00F906F8 /* SingupController.swift in Sources */,
+				C31D0F5029752EBF00BF79C9 /* SingupLiveHelper.swift in Sources */,
+				C3B5C07829757ECA0087E3A4 /* singupLiveDOBController.swift in Sources */,
+				C3B5C07429757EAA0087E3A4 /* singupLiveNameController.swift in Sources */,
 				07949FF0296C71570071F149 /* SceneDelegate.swift in Sources */,
+				C3B5C07A29757EDA0087E3A4 /* singupLiveCountyController.swift in Sources */,
 				C3B93B01296D8F6D00FED50F /* TextFieldExtension.swift in Sources */,
+				C31D0F56297539AD00BF79C9 /* singupLiveEmailController.swift in Sources */,
+				C31D0F5329752EEA00BF79C9 /* SingupDemoHelper.swift in Sources */,
 				07356DEA2973CE3B00F86B0F /* DemoController.swift in Sources */,
 				0794A010296C7B570071F149 /* LogoViewController.swift in Sources */,
 				C3EFDBB7296D7BFD00D382A3 /* AppTextField.swift in Sources */,
