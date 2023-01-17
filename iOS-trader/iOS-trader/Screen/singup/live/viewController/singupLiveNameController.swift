@@ -15,6 +15,15 @@ class SingupLiveNameController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func onFirstNameEmail(_ sender: UITextField) {
+        SingupLiveHelper.shared.firstName = sender.text!
+        print(sender.text!)
+    }
+    @IBAction func onLastNameEmail(_ sender: UITextField) {
+        SingupLiveHelper.shared.lastName = sender.text!
+        print(sender.text!)
+    }
+    
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
         return true
     }

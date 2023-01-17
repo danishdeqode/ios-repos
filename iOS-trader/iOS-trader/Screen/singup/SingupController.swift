@@ -13,8 +13,6 @@ class SingupController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
     }
     
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
@@ -49,5 +47,4 @@ class SingupController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
 }

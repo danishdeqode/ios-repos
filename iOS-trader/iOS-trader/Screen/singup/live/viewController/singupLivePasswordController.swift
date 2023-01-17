@@ -15,6 +15,15 @@ class SingupLivePasswordController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func onFirstNameEmail(_ sender: UITextField) {
+        SingupLiveHelper.shared.password = sender.text!
+        print(sender.text!)
+    }
+    @IBAction func onLastNameEmail(_ sender: UITextField) {
+        SingupLiveHelper.shared.confirmPassword = sender.text!
+        print(sender.text!)
+    }
+    
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
         return true
     }

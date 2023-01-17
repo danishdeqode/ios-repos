@@ -22,6 +22,13 @@ class SingupLiveEmailController: UIViewController {
         print("controller called")
     }
     
+    
+    @IBAction func onChangeEmail(_ sender: UITextField) {
+        SingupLiveHelper.shared.email = sender.text!
+        print(sender.text!)
+    }
+    
+    
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
         return true
     }

@@ -15,6 +15,9 @@ class SingupLiveDOBController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func datePicker(_ sender: UIDatePicker) {
+        SingupLiveHelper.shared.dob = sender.date
+    }
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
         return true
     }
