@@ -1,0 +1,127 @@
+iOS
+
+check later
+	61: ios sizing safeview super view 
+	learn protocal, struct, class, closures
+	150: closure
+
+
+float decimal
+	print(String(format: "%.2f", value))
+
+
+
+Handle keyboard action button
+
+	class WeatherViewController: UIViewController, UITextFieldDelegate {
+		override func viewDidLoad() {
+	        super.viewDidLoad()
+
+	        //to connect controller with textfield
+	        searchField.delegate = self
+	    }
+
+		func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+	        print(searchField.text!)
+	        return true
+	    }
+	}
+
+
+
+
+API Request
+
+	func fetch(){
+        let u = "https://jsonplaceholder.typicode.com/posts/1"
+        request(urlString: u)
+    }
+    func request(urlString: String){
+        if let url = URL(string: urlString){
+            let session = URLSession(configuration: .default)
+            
+            let task = session.dataTask(with: url, completionHandler: handle(data: response:  error:))
+            task.resume()
+        }
+    }
+    
+    func handle(data: Data?, response: URLResponse?, error: Error?){
+        if error != nil {
+            print(error!)
+            return
+        }
+        
+        if let safeData = data{
+            let dataStr = String(data: safeData, encoding: .utf8)
+            print(dataStr)
+        }
+    }
+
+
+
+
+JSON Serilization
+
+    func parseJSON(data: Data) {
+        let decoder = JSONDecoder()
+        
+        do{
+            let decoded = try decoder.decode(ModelClass.self, from: data)
+            print("====: \(decoded.title)")
+        } catch{
+            print("error: \(error)")
+        }
+    }
+
+
+    struct ModelClass: Decodable{
+    let title: String
+}
+
+
+
+
+
+@escaping: https://www.codingem.com/escaping-in-swift/
+
+
+
+
+
+
+
+Segue handle
+
+
+    //with perameter
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        print("segue called");
+        return;
+        if segue.identifier == "asd"{
+            if let vc = segue.destination as? DemoController{
+                print("....")
+            }
+        }
+    }
+
+    //validate segue
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        return true/false
+    }
+
+
+Navigation with navigationController
+
+//    @IBAction func doSignup(_ sender: UIButton) {
+//        self.performSegue(withIdentifier: "asd", sender: nil)
+//        let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "story_signup_email") as! SingupLiveEmailController
+//        self.navigationController?.pushViewController(secondViewController, animated: true)
+        
+//    }
+
+
+
+
+
+
+

@@ -81,10 +81,10 @@
             </objects>
             <point key="canvasLocation" x="-366" y="-121"/>
         </scene>
-        <!--story_signup-->
+        <!--story_nav-->
         <scene sceneID="5Js-61-Hpo">
             <objects>
-                <viewControllerPlaceholder storyboardName="Signup-Story" referencedIdentifier="story_signup" id="Ydp-fr-g29" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Signup-Story" referencedIdentifier="story_nav" id="Ydp-fr-g29" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="2lB-H1-lhf"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w1j-Dy-WNW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -1,0 +1,10 @@
+
+
+-create XIB file(let say A)
+-create swift file(let say AB)
+-connect XIB with swift file
+-create xib's view(root) reference in swift(for init methods)
+-implement init methods in swift
+
+on other screen where it should be viewed
+-create view and set class name AB(second step)

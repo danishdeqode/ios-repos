@@ -10,9 +10,7 @@ import Foundation
 class SingupDemoHelper{
     static var shared = SingupDemoHelper()
         
-    private init(){
-        print("init demo helper")
-    }
+    private init(){}
     
     static func reset(){
         shared = SingupDemoHelper()

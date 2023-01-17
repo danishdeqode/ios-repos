@@ -8,19 +8,35 @@
 import UIKit
 
 class SingupController: UIViewController {
+    let liveHelper = SingupLiveHelper.shared
+    let demoHelper = SingupDemoHelper.shared
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let liveHelper = SingupLiveHelper.shared
-        let demoHelper = SingupDemoHelper.shared
+        
     }
     
-    @IBAction func doSignup(_ sender: UIButton) {
-//        let secondViewController = self.storyboard.instantiateViewControllerWithIdentifier("SecondViewController") as SecondViewController
-//        self.navigationController.pushViewController(secondViewController, animated: true)
-//        SingupController
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        SingupLiveHelper.reset()
+        SingupDemoHelper.reset()
+        return true;
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+       
+//        if segue.identifier == "asd"{
+//            if let vc = segue.destination as? DemoController{
+//                print("....")
+//            }
+//        }
+    }
+//    @IBAction func doSignup(_ sender: UIButton) {
+//        self.performSegue(withIdentifier: "asd", sender: nil)
+//        let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "story_signup_email") as! SingupLiveEmailController
+//        self.navigationController?.pushViewController(secondViewController, animated: true)
+        
+//    }
     
     
 

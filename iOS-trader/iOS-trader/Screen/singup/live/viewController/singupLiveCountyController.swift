@@ -15,6 +15,9 @@ class SingupLiveCountryController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        return true
+    }
 
     /*
     // MARK: - Navigation

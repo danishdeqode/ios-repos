@@ -22,5 +22,12 @@ class SingupLiveEmailController: UIViewController {
         print("controller called")
     }
     
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        return true
+    }
+    
+    
+    
+    
     
 }

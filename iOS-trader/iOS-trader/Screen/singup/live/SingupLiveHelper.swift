@@ -11,9 +11,7 @@ class SingupLiveHelper{
     
     static var shared = SingupLiveHelper()
         
-    private init(){
-        print("init live helper")
-    }
+    private init(){}
     
     static func reset(){
         shared = SingupLiveHelper()
