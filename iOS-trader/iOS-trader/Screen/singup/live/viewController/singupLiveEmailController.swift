@@ -23,7 +23,15 @@ class SingupLiveEmailController: UIViewController {
     }
     
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
-        return true
+        return isValid()
+    }
+    
+//MARK: - Validation
+    
+    
+    func isValid() -> Bool{
+        
+        return true;
     }
     
     
