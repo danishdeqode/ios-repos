@@ -516,7 +516,7 @@
         <!--Singup Live Country Controller-->
         <scene sceneID="C1X-76-yBz">
             <objects>
-                <viewController storyboardIdentifier="story_signup_country" id="nJG-Al-hla" customClass="SingupLiveCountryController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="story_signup_country" id="nJG-Al-hla" customClass="SingupLiveCountryController" customModule="iOS_trader" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yxf-Ig-fQi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -539,25 +539,18 @@
                                 <color key="textColor" name="white"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ccH-PW-oRY" customClass="DropDown">
+                            <textField autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Country key" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ccH-PW-oRY" customClass="DropDown" customModule="iOSDropDown">
                                 <rect key="frame" x="10" y="256" width="394" height="40"/>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" systemColor="secondarySystemBackgroundColor"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" notEnabled="YES"/>
+                                </accessibility>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="h5l-PC-dr6"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="continue" secureTextEntry="YES" textContentType="name"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LEb-H0-yB8">
-                                <rect key="frame" x="10" y="316" width="394" height="40"/>
-                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="tintColor" systemColor="secondarySystemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="55b-TI-ogv"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="continue" textContentType="family-name"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="continue" textContentType="name"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X95-xP-PNe">
                                 <rect key="frame" x="10" y="812" width="394" height="40"/>
@@ -580,10 +573,7 @@
                             <constraint firstItem="NlO-8s-7Md" firstAttribute="trailing" secondItem="X95-xP-PNe" secondAttribute="trailing" constant="10" id="O3A-EN-Wdz"/>
                             <constraint firstItem="kZb-WA-nzn" firstAttribute="top" secondItem="NlO-8s-7Md" secondAttribute="top" constant="10" id="Trd-lM-Yod"/>
                             <constraint firstItem="NlO-8s-7Md" firstAttribute="trailing" secondItem="ccH-PW-oRY" secondAttribute="trailing" constant="10" id="WbQ-QY-5uk"/>
-                            <constraint firstItem="LEb-H0-yB8" firstAttribute="leading" secondItem="NlO-8s-7Md" secondAttribute="leading" constant="10" id="bsZ-bf-7IZ"/>
-                            <constraint firstItem="NlO-8s-7Md" firstAttribute="trailing" secondItem="LEb-H0-yB8" secondAttribute="trailing" constant="10" id="c6m-yc-RGm"/>
                             <constraint firstItem="gBZ-gs-9Ql" firstAttribute="top" secondItem="kZb-WA-nzn" secondAttribute="bottom" constant="40" id="hJe-mo-9ZM"/>
-                            <constraint firstItem="LEb-H0-yB8" firstAttribute="top" secondItem="ccH-PW-oRY" secondAttribute="bottom" constant="20" id="jbc-0z-9Of"/>
                             <constraint firstItem="kZb-WA-nzn" firstAttribute="centerX" secondItem="yxf-Ig-fQi" secondAttribute="centerX" id="oQJ-Ci-ikU"/>
                             <constraint firstItem="X95-xP-PNe" firstAttribute="leading" secondItem="NlO-8s-7Md" secondAttribute="leading" constant="10" id="rFT-mN-Por"/>
                             <constraint firstItem="ccH-PW-oRY" firstAttribute="leading" secondItem="NlO-8s-7Md" secondAttribute="leading" constant="10" id="wp5-sB-uDQ"/>
@@ -591,7 +581,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="nUY-Kp-zpv"/>
                     <connections>
-                        <outlet property="countryDropdown" destination="ccH-PW-oRY" id="wW4-YG-V3S"/>
+                        <outlet property="dropdwn" destination="ccH-PW-oRY" id="LIQ-xN-T01"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fM4-yX-AeX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

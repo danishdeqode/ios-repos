@@ -16,22 +16,25 @@ class SingupLiveCountryController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
     
-    @IBOutlet weak var countryDropdown: DropDown!
-    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
-        initDropdownList()
-        return true
-    }
+//    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+//
+//        return true
+//    }
+
+    @IBOutlet weak var dropdwn: DropDown!
     
     func initDropdownList(){
         print("...")
-        countryDropdown.optionArray = ["Option 1", "Option 2", "Option 3"]
-        //Its Id Values and its optional
-//        countryDropdown.optionIds = [1,23,54,22]
-
+        dropdwn.optionArray = ["Option 1", "Option 2", "Option 3"]
+        dropdwn.optionIds = [1,23,54,22]
         // Image Array its optional
-//        countryDropdown.ImageArray = [👩🏻‍🦳,🙊,🥞]
+        dropdwn.showList()
+
+        // The the Closure returns Selected Index and String
+//        dropdwn.didSelect{(selectedText , index ,id) in
+//        self.valueLabel.text = "Selected String: \(selectedText) \n index: \(index)"
+//            }
         
 //
 //        countryDropdown.didSelect{(selectedText , index ,id) in

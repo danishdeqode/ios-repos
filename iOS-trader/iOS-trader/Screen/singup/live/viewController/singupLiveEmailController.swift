@@ -50,7 +50,8 @@ class SingupLiveEmailController: UIViewController {
     
     
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
-        return validate()
+        validate()
+        return true
     }
     
     

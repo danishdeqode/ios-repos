@@ -6,6 +6,10 @@ target 'iOS-trader' do
   use_frameworks!
 
   # Pods for iOS-trader
+#  pod 'iOSDropDown'
+#  pod 'DropDown', '2.3.2'
+#  pod "DropDownMenuKit"
   pod 'iOSDropDown'
+
 
 end
