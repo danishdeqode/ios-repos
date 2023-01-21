@@ -25,16 +25,17 @@ class SingupLiveCountryController: UIViewController {
     @IBOutlet weak var dropdwn: DropDown!
     
     func initDropdownList(){
-        print("...")
-        dropdwn.optionArray = ["Option 1", "Option 2", "Option 3"]
-        dropdwn.optionIds = [1,23,54,22]
+        dropdwn.optionArray = SingupLiveHelper.shared.countries
+        dropdwn.optionIds = [1,23,54]
+        dropdwn.selectedRowColor = UIColor(named: "activeGreen") ?? .darkGray
+        dropdwn.checkMarkEnabled = false
+        
         // Image Array its optional
-        dropdwn.showList()
 
         // The the Closure returns Selected Index and String
-//        dropdwn.didSelect{(selectedText , index ,id) in
-//        self.valueLabel.text = "Selected String: \(selectedText) \n index: \(index)"
-//            }
+        dropdwn.didSelect{(selectedText , index ,id) in
+        print("Selected String: \(selectedText), index: \(index)")
+            }
         
 //
 //        countryDropdown.didSelect{(selectedText , index ,id) in

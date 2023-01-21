@@ -185,7 +185,7 @@
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5ct-ru-0x1">
                                 <rect key="frame" x="10" y="256" width="394" height="40"/>
-                                <color key="backgroundColor" red="0.30010103945283634" green="0.31268968965591576" blue="0.31451231060606055" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" name="activeBg"/>
                                 <color key="tintColor" systemColor="secondarySystemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="tNU-z2-DKZ"/>
@@ -193,6 +193,11 @@
                                 <color key="textColor" name="whiteSecondry"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="continue" textContentType="email"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                        <color key="value" name="inactive1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="onChangeEmail:" destination="ODl-A8-SIt" eventType="editingChanged" id="tsy-OV-6JV"/>
                                 </connections>
@@ -267,7 +272,7 @@
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="phW-gC-918">
                                 <rect key="frame" x="10" y="256" width="394" height="40"/>
-                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" name="activeBg"/>
                                 <color key="tintColor" systemColor="secondarySystemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="4vf-up-p6D"/>
@@ -275,13 +280,18 @@
                                 <color key="textColor" name="whiteSecondry"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="continue" secureTextEntry="YES" textContentType="password"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                        <color key="value" name="inactive1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="onPasswordChanged:" destination="l23-w4-hFD" eventType="editingDidEnd" id="DsS-Ha-Uwp"/>
                                 </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bat-uf-dT4">
                                 <rect key="frame" x="10" y="316" width="394" height="40"/>
-                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" name="activeBg"/>
                                 <color key="tintColor" systemColor="secondarySystemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="yT5-aU-Gug"/>
@@ -289,6 +299,11 @@
                                 <color key="textColor" name="whiteSecondry"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="continue" secureTextEntry="YES" textContentType="password"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                        <color key="value" name="inactive1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="onConfirmPasswordChanged:" destination="l23-w4-hFD" eventType="editingDidEnd" id="zed-hP-ctU"/>
                                 </connections>
@@ -364,7 +379,7 @@
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ssf-dW-x5v">
                                 <rect key="frame" x="10" y="256" width="394" height="40"/>
-                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.22352941176470587" green="0.2196078431372549" blue="0.30588235294117649" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" systemColor="secondarySystemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="vMv-6E-Ydb"/>
@@ -372,13 +387,18 @@
                                 <color key="textColor" name="whiteSecondry"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="continue" textContentType="name"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                        <color key="value" name="inactive1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="onFirstNameEmail:" destination="feg-2C-GZr" eventType="editingChanged" id="X0z-Rs-7v8"/>
                                 </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qR8-sW-Y7R">
                                 <rect key="frame" x="10" y="316" width="394" height="40"/>
-                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" name="activeBg"/>
                                 <color key="tintColor" systemColor="secondarySystemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="pWh-Fc-1TX"/>
@@ -386,6 +406,11 @@
                                 <color key="textColor" name="whiteSecondry"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="continue" textContentType="family-name"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                        <color key="value" name="inactive1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="onLastNameEmail:" destination="feg-2C-GZr" eventType="editingChanged" id="XbQ-so-dvo"/>
                                 </connections>
@@ -539,9 +564,9 @@
                                 <color key="textColor" name="white"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Country key" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ccH-PW-oRY" customClass="DropDown" customModule="iOSDropDown">
+                            <textField autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Country" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ccH-PW-oRY" customClass="DropDown" customModule="iOSDropDown">
                                 <rect key="frame" x="10" y="256" width="394" height="40"/>
-                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" name="activeBg"/>
                                 <color key="tintColor" systemColor="secondarySystemBackgroundColor"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" notEnabled="YES"/>
@@ -549,8 +574,14 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="h5l-PC-dr6"/>
                                 </constraints>
+                                <color key="textColor" name="whiteSecondry"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="continue" textContentType="name"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                        <color key="value" name="inactive1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X95-xP-PNe">
                                 <rect key="frame" x="10" y="812" width="394" height="40"/>
@@ -611,6 +642,9 @@
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <namedColor name="activeBg">
+            <color red="0.22352941176470587" green="0.2196078431372549" blue="0.30588235294117649" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
         <namedColor name="activeBlue">
             <color red="0.18799999356269836" green="0.41200000047683716" blue="0.86699998378753662" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
@@ -619,6 +653,9 @@
         </namedColor>
         <namedColor name="backgroundColor">
             <color red="0.13500000536441803" green="0.13699999451637268" blue="0.13699999451637268" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="inactive1">
+            <color red="0.85327052699999995" green="0.84490512959999997" blue="0.84490512959999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="white">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>

@@ -86,4 +86,24 @@ class SingupLiveHelper{
     }
     
     
+    
+    
+    private var userCounter:String = ""
+    var country:String{
+        get {
+            return self.userConfirmPassword
+        }
+        set(value) {
+            self.userConfirmPassword = value
+        }
+    }
+    
+    
+    let countries:[String] = [
+        "India",
+        "UK",
+        "US"
+    ]
+    
+    
 }

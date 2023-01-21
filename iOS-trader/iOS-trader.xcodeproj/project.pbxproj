@@ -81,7 +81,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		071815272973313E00F906F8 /* singup */ = {
+		071815272973313E00F906F8 /* signup */ = {
 			isa = PBXGroup;
 			children = (
 				071815292973315500F906F8 /* live */,
@@ -89,7 +89,7 @@
 				0718152A2973333D00F906F8 /* Signup-Story.storyboard */,
 				0718152C2973335F00F906F8 /* SingupController.swift */,
 			);
-			path = singup;
+			path = signup;
 			sourceTree = "<group>";
 		};
 		071815282973314B00F906F8 /* demo */ = {
@@ -119,6 +119,20 @@
 			path = AppLogo;
 			sourceTree = "<group>";
 		};
+		0750F382297BC2A800EB2B91 /* home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
+		0750F383297BC2C700EB2B91 /* search */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = search;
+			sourceTree = "<group>";
+		};
 		07949FE1296C71570071F149 = {
 			isa = PBXGroup;
 			children = (
@@ -140,10 +154,10 @@
 		07949FEC296C71570071F149 /* iOS-trader */ = {
 			isa = PBXGroup;
 			children = (
+				0794A001296C716E0071F149 /* Application */,
 				C3B93AFF296D8F5C00FED50F /* Helper */,
 				0794A005296C75BA0071F149 /* Components */,
 				0794A002296C718C0071F149 /* Screen */,
-				0794A001296C716E0071F149 /* Application */,
 				0794A004296C71B10071F149 /* Storyboard */,
 				0794A003296C71A10071F149 /* Resources */,
 				07949FFB296C71580071F149 /* Info.plist */,
@@ -163,7 +177,9 @@
 		0794A002296C718C0071F149 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
-				071815272973313E00F906F8 /* singup */,
+				0750F383297BC2C700EB2B91 /* search */,
+				0750F382297BC2A800EB2B91 /* home */,
+				071815272973313E00F906F8 /* signup */,
 				07949FF1296C71570071F149 /* MainController.swift */,
 			);
 			path = Screen;
