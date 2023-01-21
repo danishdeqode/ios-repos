@@ -1,0 +1,23 @@
+import UIKit
+
+class TableViewController: UITableViewController {
+
+    let items: [String] = ["go gym", "take bath", "cloths"]
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return items.count
+    }
+
+    //K.mainCell is a reusableIdentifier
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: K.mainCell, for: indexPath)
+        cell.textLabel?.text = items[indexPath.row]
+        return cell
+    }
+
+
+}

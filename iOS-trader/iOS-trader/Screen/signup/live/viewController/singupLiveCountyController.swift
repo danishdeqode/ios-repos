@@ -24,6 +24,7 @@ class SingupLiveCountryController: UIViewController {
 
     @IBOutlet weak var dropdwn: DropDown!
     
+    @IBOutlet weak var loader: UIActivityIndicatorView!
     func initDropdownList(){
         dropdwn.optionArray = SingupLiveHelper.shared.countries
         dropdwn.optionIds = [1,23,54]
@@ -52,5 +53,16 @@ class SingupLiveCountryController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    func navigate(){
+        loader.startAnimating()
+//        self.view.isUserInteractionEnabled = false
+        self.loader.stopAnimating()
+        //            self.view.isUserInteractionEnabled = true
+//        let timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: false) { time in
+//            self.loader.stopAnimating()
+//            self.view.isUserInteractionEnabled = true
+//            self.performSegue(withIdentifier: SegueIdentifier.toMobile, sender: nil)
+//        }
+    }
 
 }

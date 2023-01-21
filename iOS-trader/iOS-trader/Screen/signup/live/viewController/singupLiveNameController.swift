@@ -28,6 +28,8 @@ class SingupLiveNameController: UIViewController {
     
     // MARK: - Validation
     
+
+    @IBOutlet weak var loader: UIActivityIndicatorView!
     func validate(_ field: UITextField) -> Bool {
         field.layer.borderWidth = 1.0
         field.layer.cornerRadius = 4.0
@@ -49,11 +51,17 @@ class SingupLiveNameController: UIViewController {
     
     
     // MARK: - Navigation
-    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+
+    @IBAction func navigate(_ sender: UIButton) {
+        loader.startAnimating()
+        self.view.isUserInteractionEnabled = false
         validate(fnameField)
         validate(lnameField)
-        return true
+        let timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: false) { time in
+            self.loader.stopAnimating()
+            self.view.isUserInteractionEnabled = true
+            self.performSegue(withIdentifier: SegueIdentifier.toDOB, sender: nil)
+        }
     }
-    
 
 }

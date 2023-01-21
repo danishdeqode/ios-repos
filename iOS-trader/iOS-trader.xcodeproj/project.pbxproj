@@ -14,6 +14,8 @@
 		07356DEC2973CF4400F86B0F /* LiveController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07356DEB2973CF4400F86B0F /* LiveController.swift */; };
 		0745274329731C440059DF1E /* AppLogo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0745274229731C440059DF1E /* AppLogo.xib */; };
 		0745274529731D040059DF1E /* AppLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0745274429731D040059DF1E /* AppLogo.swift */; };
+		07948F04297C5DEE00DD21DF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07948F03297C5DEE00DD21DF /* Constants.swift */; };
+		07948F07297C651E00DD21DF /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07948F06297C651E00DD21DF /* GradientView.swift */; };
 		07949FEE296C71570071F149 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07949FED296C71570071F149 /* AppDelegate.swift */; };
 		07949FF0296C71570071F149 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07949FEF296C71570071F149 /* SceneDelegate.swift */; };
 		07949FF2296C71570071F149 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07949FF1296C71570071F149 /* MainController.swift */; };
@@ -43,6 +45,8 @@
 		07356DEB2973CF4400F86B0F /* LiveController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveController.swift; sourceTree = "<group>"; };
 		0745274229731C440059DF1E /* AppLogo.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppLogo.xib; sourceTree = "<group>"; };
 		0745274429731D040059DF1E /* AppLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLogo.swift; sourceTree = "<group>"; };
+		07948F03297C5DEE00DD21DF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		07948F06297C651E00DD21DF /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		07949FEA296C71570071F149 /* iOS-trader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-trader.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		07949FED296C71570071F149 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07949FEF296C71570071F149 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -133,6 +137,22 @@
 			path = search;
 			sourceTree = "<group>";
 		};
+		07948F02297C5DDB00DD21DF /* Values */ = {
+			isa = PBXGroup;
+			children = (
+				07948F03297C5DEE00DD21DF /* Constants.swift */,
+			);
+			path = Values;
+			sourceTree = "<group>";
+		};
+		07948F05297C64F800DD21DF /* Gradient */ = {
+			isa = PBXGroup;
+			children = (
+				07948F06297C651E00DD21DF /* GradientView.swift */,
+			);
+			path = Gradient;
+			sourceTree = "<group>";
+		};
 		07949FE1296C71570071F149 = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +174,7 @@
 		07949FEC296C71570071F149 /* iOS-trader */ = {
 			isa = PBXGroup;
 			children = (
+				07948F02297C5DDB00DD21DF /* Values */,
 				0794A001296C716E0071F149 /* Application */,
 				C3B93AFF296D8F5C00FED50F /* Helper */,
 				0794A005296C75BA0071F149 /* Components */,
@@ -205,6 +226,7 @@
 		0794A005296C75BA0071F149 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				07948F05297C64F800DD21DF /* Gradient */,
 				0745274129731C180059DF1E /* AppLogo */,
 				C3EFDBB3296D7B8A00D382A3 /* AppTextField */,
 				0794A00D296C7AD70071F149 /* Logo */,
@@ -388,6 +410,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07948F07297C651E00DD21DF /* GradientView.swift in Sources */,
 				07949FF2296C71570071F149 /* MainController.swift in Sources */,
 				C3B5C07629757EBB0087E3A4 /* singupLivePasswordController.swift in Sources */,
 				07356DEC2973CF4400F86B0F /* LiveController.swift in Sources */,
@@ -405,6 +428,7 @@
 				07356DEA2973CE3B00F86B0F /* DemoController.swift in Sources */,
 				0794A010296C7B570071F149 /* LogoViewController.swift in Sources */,
 				C3EFDBB7296D7BFD00D382A3 /* AppTextField.swift in Sources */,
+				07948F04297C5DEE00DD21DF /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

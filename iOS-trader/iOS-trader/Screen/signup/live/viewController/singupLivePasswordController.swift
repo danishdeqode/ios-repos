@@ -11,10 +11,14 @@ class SingupLivePasswordController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        loader.stopAnimating()
+        
         // Do any additional setup after loading the view.
     }
     // MARK: - UI Fields
+
+    
+    @IBOutlet weak var loader: UIActivityIndicatorView!
     @IBOutlet weak var confirmPasswordField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     @IBAction func onPasswordChanged(_ sender: UITextField) {
@@ -66,19 +70,17 @@ class SingupLivePasswordController: UIViewController {
     }
     
     // MARK: - Navigation
-    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
-        validatePassword() && validateConfirmPassword()
-        return true
-    }
-
-    /*
     
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func navigate(_ sender: UIButton) {
+        loader.startAnimating()
+        self.view.isUserInteractionEnabled = false
+        validatePassword() && validateConfirmPassword()
+        let timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: false) { time in
+            self.loader.stopAnimating()
+            self.view.isUserInteractionEnabled = true
+            self.performSegue(withIdentifier: SegueIdentifier.toName, sender: nil)
+        }
     }
-    */
 
 }

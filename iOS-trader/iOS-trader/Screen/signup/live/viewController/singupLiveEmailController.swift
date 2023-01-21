@@ -19,9 +19,9 @@ class SingupLiveEmailController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("controller called")
     }
     
+    @IBOutlet weak var loader: UIActivityIndicatorView!
     @IBOutlet weak var emailField: UITextField!
     
     @IBAction func onChangeEmail(_ sender: UITextField) {
@@ -48,10 +48,15 @@ class SingupLiveEmailController: UIViewController {
         }
     }
     
-    
-    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+    @IBAction func navigate(_ sender: UIButton) {
+        loader.startAnimating()
+        self.view.isUserInteractionEnabled = false
         validate()
-        return true
+        let timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: false) { time in
+            self.loader.stopAnimating()
+            self.view.isUserInteractionEnabled = true
+            self.performSegue(withIdentifier: SegueIdentifier.toPassword, sender: nil)
+        }
     }
     
     

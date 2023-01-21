@@ -1,0 +1,22 @@
+
+Install cocoapods 
+
+	sudo gem install cocoapods
+	pod setup --verbose
+
+	goto project directory
+
+	pod init // to generate pod file
+	//add dependency
+
+
+	//add dependency
+
+    
+    pod 'Alamofire'
+    or
+    pod 'Alamofire', '~> 4.7'
+
+	then run
+	pod install // to generate xcworkspace file
+	
