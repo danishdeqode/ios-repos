@@ -21,16 +21,27 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash" translatesAutoresizingMaskIntoConstraints="NO" id="dF1-uC-QVR">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="TQJ-EX-Q7o">
-                                <rect key="frame" x="10" y="382" width="300" height="166"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="TQJ-EX-Q7o">
+                                <rect key="frame" x="10" y="348" width="300" height="200"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="534" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kLm-JT-3Ad" customClass="customUITextField" customModule="iOS_trader" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="300" height="48.5"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kLm-JT-3Ad" userLabel="email" customClass="customUITextField" customModule="iOS_trader" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="35"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OfL-tX-3HK" userLabel="password" customClass="customUITextField" customModule="iOS_trader" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="45" width="300" height="35"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES" textContentType="given-name"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forgot Password" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t8p-S2-cWn">
+                                        <rect key="frame" x="0.0" y="90" width="300" height="17.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                        <color key="textColor" name="inactive1"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zPP-jl-Nlr">
-                                        <rect key="frame" x="0.0" y="58.5" width="300" height="49"/>
+                                        <rect key="frame" x="0.0" y="117.5" width="300" height="35.5"/>
                                         <color key="tintColor" name="activeGreen"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Login">
@@ -38,7 +49,7 @@
                                         </buttonConfiguration>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fdk-n4-jcH">
-                                        <rect key="frame" x="0.0" y="117.5" width="300" height="48.5"/>
+                                        <rect key="frame" x="0.0" y="163" width="300" height="37"/>
                                         <color key="tintColor" name="white"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="SignUp"/>
@@ -48,7 +59,7 @@
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="166" id="cCL-F2-byu"/>
+                                    <constraint firstAttribute="height" constant="200" id="cCL-F2-byu"/>
                                 </constraints>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y6F-bz-GyW" customClass="AppLogo" customModule="iOS_trader" customModuleProvider="target">
@@ -93,14 +104,20 @@
         </scene>
     </scenes>
     <designables>
+        <designable name="OfL-tX-3HK">
+            <size key="intrinsicContentSize" width="90.5" height="34"/>
+        </designable>
         <designable name="kLm-JT-3Ad">
-            <size key="intrinsicContentSize" width="54" height="34"/>
+            <size key="intrinsicContentSize" width="62.5" height="34"/>
         </designable>
     </designables>
     <resources>
         <image name="splash" width="266.5" height="474"/>
         <namedColor name="activeGreen">
             <color red="0.17299999296665192" green="0.79199999570846558" blue="0.68599998950958252" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="inactive1">
+            <color red="0.8529999852180481" green="0.84500002861022949" blue="0.84500002861022949" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="white">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>

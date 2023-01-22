@@ -9,7 +9,6 @@ import UIKit
 
 class SingupController: UIViewController {
     let liveHelper = SingupLiveHelper.shared
-    let demoHelper = SingupDemoHelper.shared
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,7 +16,6 @@ class SingupController: UIViewController {
     
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
         SingupLiveHelper.reset()
-        SingupDemoHelper.reset()
         return true;
     }
     

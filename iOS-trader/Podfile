@@ -10,6 +10,8 @@ target 'iOS-trader' do
 #  pod 'DropDown', '2.3.2'
 #  pod "DropDownMenuKit"
   pod 'iOSDropDown'
+  pod 'IQKeyboardManagerSwift'
+  pod 'Alamofire', '~> 4.7'
 
 
 end

@@ -108,38 +108,50 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="egZ-kL-Ahq">
-                                <rect key="frame" x="10" y="102" width="394" height="760"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="is4-tY-sof">
+                                <rect key="frame" x="-10" y="102" width="394" height="260.5"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let’s get started" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GBt-BD-KWB">
-                                        <rect key="frame" x="99" y="0.0" width="196.5" height="710"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
-                                        <color key="textColor" name="white"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="emp-C9-awF">
-                                        <rect key="frame" x="0.0" y="720" width="394" height="40"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="K0q-Ys-yUH"/>
-                                        </constraints>
-                                        <color key="tintColor" name="activeBlue"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kBQ-nR-AAG" customClass="GradientView" customModule="iOS_trader" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="175.5"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                                <color key="value" systemColor="systemIndigoColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                                <color key="value" systemColor="systemMintColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ruk-lY-gD0">
+                                        <rect key="frame" x="126" y="183.5" width="142" height="34.5"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Continue"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="signup success"/>
+                                        <connections>
+                                            <segue destination="rpl-z7-FBo" kind="show" id="48g-Gw-cAd"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qDj-BY-nQl">
+                                        <rect key="frame" x="157" y="226" width="80" height="34.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="API call"/>
+                                        <connections>
+                                            <action selector="APIcall:" destination="W1n-5P-Jw5" eventType="touchUpInside" id="nrg-W9-ufZ"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="emp-C9-awF" firstAttribute="leading" secondItem="egZ-kL-Ahq" secondAttribute="leading" id="KZR-0O-zPr"/>
-                                    <constraint firstAttribute="trailing" secondItem="emp-C9-awF" secondAttribute="trailing" id="pBk-go-cSQ"/>
+                                    <constraint firstItem="kBQ-nR-AAG" firstAttribute="leading" secondItem="is4-tY-sof" secondAttribute="leadingMargin" id="NNb-ps-bh3"/>
                                 </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bTn-F3-yvu"/>
                         <color key="backgroundColor" name="backgroundColor"/>
                         <constraints>
-                            <constraint firstItem="bTn-F3-yvu" firstAttribute="trailing" secondItem="egZ-kL-Ahq" secondAttribute="trailing" constant="10" id="MC8-bZ-geO"/>
-                            <constraint firstItem="egZ-kL-Ahq" firstAttribute="top" secondItem="bTn-F3-yvu" secondAttribute="top" constant="10" id="dXf-J5-ezU"/>
-                            <constraint firstItem="egZ-kL-Ahq" firstAttribute="leading" secondItem="bTn-F3-yvu" secondAttribute="leading" constant="10" id="faj-ca-8KE"/>
-                            <constraint firstItem="bTn-F3-yvu" firstAttribute="bottom" secondItem="egZ-kL-Ahq" secondAttribute="bottom" id="w2z-NI-khI"/>
+                            <constraint firstItem="bTn-F3-yvu" firstAttribute="bottom" secondItem="is4-tY-sof" secondAttribute="bottom" constant="499.5" id="4RG-Yo-8vM"/>
+                            <constraint firstItem="is4-tY-sof" firstAttribute="leading" secondItem="K3w-l7-kjh" secondAttribute="leadingMargin" constant="-30" id="6hW-v6-r6U"/>
+                            <constraint firstItem="is4-tY-sof" firstAttribute="top" secondItem="bTn-F3-yvu" secondAttribute="top" constant="10" id="7Ra-0G-WxG"/>
+                            <constraint firstItem="bTn-F3-yvu" firstAttribute="trailing" secondItem="is4-tY-sof" secondAttribute="trailing" constant="30" id="moT-KA-Aoc"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="8Ur-i5-5ZV"/>
@@ -207,7 +219,7 @@
                                 </constraints>
                             </view>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="1NA-Nr-fBO">
-                                <rect key="frame" x="197" y="438" width="20" height="20"/>
+                                <rect key="frame" x="194" y="434" width="20" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <color key="color" name="activeGreen"/>
                             </activityIndicatorView>
@@ -435,7 +447,7 @@
                                 </constraints>
                             </view>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="cIz-8r-Dka">
-                                <rect key="frame" x="197" y="438" width="20" height="20"/>
+                                <rect key="frame" x="195" y="434" width="20" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <color key="color" name="activeGreen"/>
                             </activityIndicatorView>
@@ -527,7 +539,7 @@
                                 </connections>
                             </datePicker>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="45d-Gy-SHf">
-                                <rect key="frame" x="197" y="438" width="20" height="20"/>
+                                <rect key="frame" x="196" y="434" width="20" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <color key="color" name="activeGreen"/>
                             </activityIndicatorView>
@@ -606,6 +618,9 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Continue">
                                     <color key="baseBackgroundColor" name="activeGreen"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="rpl-z7-FBo" kind="show" id="pu1-i9-Mip"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kZb-WA-nzn" customClass="AppLogo" customModule="iOS_trader" customModuleProvider="target">
                                 <rect key="frame" x="137" y="92" width="140" height="70"/>
@@ -616,7 +631,7 @@
                                 </constraints>
                             </view>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="0wt-bk-74x">
-                                <rect key="frame" x="197" y="438" width="20" height="20"/>
+                                <rect key="frame" x="197" y="434" width="17" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <color key="color" name="activeGreen"/>
                             </activityIndicatorView>
@@ -664,8 +679,81 @@
             </objects>
             <point key="canvasLocation" x="1892.753623188406" y="-2.6785714285714284"/>
         </scene>
+        <!--Singup Live Success Controller-->
+        <scene sceneID="mcH-yn-auR">
+            <objects>
+                <viewController storyboardIdentifier="story_signup_success" id="rpl-z7-FBo" customClass="SingupLiveSuccessController" customModule="iOS_trader" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mlb-vD-DW5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="success_bg" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="emz-v4-I9C">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view autoresizesSubviews="NO" clipsSubviews="YES" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="DuJ-AU-xcN" customClass="GradientView" customModule="iOS_trader" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account Successfully Created !!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GY5-K4-cCT">
+                                        <rect key="frame" x="10" y="436" width="394" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                        <color key="textColor" name="white"/>
+                                        <color key="highlightedColor" name="white"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="GY5-K4-cCT" firstAttribute="leading" secondItem="DuJ-AU-xcN" secondAttribute="leading" constant="10" id="Yew-Vl-jwh"/>
+                                    <constraint firstAttribute="trailing" secondItem="GY5-K4-cCT" secondAttribute="trailing" constant="10" id="a8N-1S-sw2"/>
+                                    <constraint firstItem="GY5-K4-cCT" firstAttribute="centerY" secondItem="DuJ-AU-xcN" secondAttribute="centerY" id="yfK-nE-7oM"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                        <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.22358754139072848" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jVg-DI-3Qx">
+                                <rect key="frame" x="10" y="812" width="394" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ieq-IG-i0R"/>
+                                </constraints>
+                                <color key="tintColor" name="activeGreen"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Continue">
+                                    <color key="baseBackgroundColor" name="activeGreen"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="navigate:" destination="rpl-z7-FBo" eventType="touchUpInside" id="XRH-jP-YjG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="L8Z-d9-Evz"/>
+                        <color key="backgroundColor" name="backgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jVg-DI-3Qx" firstAttribute="leading" secondItem="L8Z-d9-Evz" secondAttribute="leading" constant="10" id="1Nr-T0-VH4"/>
+                            <constraint firstItem="L8Z-d9-Evz" firstAttribute="trailing" secondItem="jVg-DI-3Qx" secondAttribute="trailing" constant="10" id="7MK-fF-otK"/>
+                            <constraint firstItem="DuJ-AU-xcN" firstAttribute="leading" secondItem="mlb-vD-DW5" secondAttribute="leading" id="F50-mi-ibK"/>
+                            <constraint firstItem="L8Z-d9-Evz" firstAttribute="trailing" secondItem="DuJ-AU-xcN" secondAttribute="trailing" id="Kbu-Wz-hX4"/>
+                            <constraint firstAttribute="bottom" secondItem="DuJ-AU-xcN" secondAttribute="bottom" id="Xis-37-epN"/>
+                            <constraint firstItem="L8Z-d9-Evz" firstAttribute="bottom" secondItem="jVg-DI-3Qx" secondAttribute="bottom" constant="10" id="bIb-vU-F0Y"/>
+                            <constraint firstItem="DuJ-AU-xcN" firstAttribute="top" secondItem="mlb-vD-DW5" secondAttribute="top" id="llU-JR-oVG"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="hcQ-uC-E2N"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nc8-t4-Y2g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7182.6086956521749" y="-328.125"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="48g-Gw-cAd"/>
+    </inferredMetricsTieBreakers>
     <resources>
+        <image name="success_bg" width="441" height="682.5"/>
         <namedColor name="activeBg">
             <color red="0.22400000691413879" green="0.2199999988079071" blue="0.3059999942779541" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
@@ -695,6 +783,12 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
