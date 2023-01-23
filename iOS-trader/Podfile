@@ -1,0 +1,17 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'iOS-trader' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for iOS-trader
+#  pod 'iOSDropDown'
+#  pod 'DropDown', '2.3.2'
+#  pod "DropDownMenuKit"
+  pod 'iOSDropDown'
+  pod 'IQKeyboardManagerSwift'
+  pod 'Alamofire', '~> 4.7'
+
+
+end

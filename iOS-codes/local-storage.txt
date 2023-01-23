@@ -1,0 +1,11 @@
+let db = UserDefaults.standard
+
+
+    //to set
+    self.db.set(self.items, forKey: "todoItems")
+
+    //to load
+
+    if let list = db.array(forKey: "todoItems") as? [String]{
+        items = list
+    }

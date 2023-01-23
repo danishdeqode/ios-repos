@@ -1,0 +1,23 @@
+@IBAction func addButton(_ sender: UIBarButtonItem) {
+        var textfield = UITextField()
+        let alert = UIAlertController(title: "Add new item", message: "", preferredStyle: .alert)
+        let action = UIAlertAction(title: "Add", style: .default) {
+            (action) in
+            print("done")
+            print(textfield.text)
+            if let task = textfield.text{
+                self.items.append(task)
+                self.tableView.reloadData()
+            }
+        }
+        alert.addAction(action)
+        
+        alert.addTextField{
+            (alertTextField) in
+            alertTextField.placeholder = "Task title..."
+            textfield = alertTextField
+            
+        }
+        
+        present(alert, animated: true, completion: nil)
+    }

@@ -1,0 +1,10 @@
+    @IBAction func addButton(_ sender: UIBarButtonItem) {
+        let alert = UIAlertController(title: "Add new item", message: "", preferredStyle: .alert)
+        let action = UIAlertAction(title: "Add", style: .default) {
+            (action) in
+            print("done")
+        }
+        alert.addAction(action)
+        
+        present(alert, animated: true, completion: nil)
+    }
