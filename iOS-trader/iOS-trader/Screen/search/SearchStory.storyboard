@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Search View-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="search_id" id="Y6W-OH-hqX" customClass="SearchView" customModule="iOS_trader" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Tc4-rA-RUD">
+                                <rect key="frame" x="10" y="60" width="373" height="40"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow.backward" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="183-1D-VY4">
+                                        <rect key="frame" x="0.0" y="2.9999999999999982" width="32" height="30.333333333333329"/>
+                                        <color key="tintColor" name="inactive1"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="32" id="lgP-za-ZzM"/>
+                                        </constraints>
+                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="medium"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="43Z-0o-MCL">
+                                        <rect key="frame" x="32" y="0.0" width="52" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="52" id="X4W-tU-zTm"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zIB-ZM-rkj">
+                                        <rect key="frame" x="84" y="0.0" width="289" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                        <color key="textColor" name="whiteSecondry"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="TRa-oC-PVw"/>
+                                    <constraint firstAttribute="bottom" secondItem="183-1D-VY4" secondAttribute="bottom" constant="4" id="YB5-sG-kcT"/>
+                                    <constraint firstAttribute="bottom" secondItem="43Z-0o-MCL" secondAttribute="bottom" constant="4" id="c8f-I8-S0Y"/>
+                                    <constraint firstAttribute="bottom" secondItem="zIB-ZM-rkj" secondAttribute="bottom" constant="4" id="nur-Ly-BV0"/>
+                                </constraints>
+                            </stackView>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Seach ..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P13-kF-1Gi">
+                                <rect key="frame" x="10" y="110" width="373" height="34"/>
+                                <color key="backgroundColor" name="activeBg"/>
+                                <color key="textColor" name="whiteSecondry"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" name="backgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Tc4-rA-RUD" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="60" id="1b4-uJ-fiP"/>
+                            <constraint firstItem="P13-kF-1Gi" firstAttribute="top" secondItem="Tc4-rA-RUD" secondAttribute="bottom" constant="10" id="GCi-HF-Q0F"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="P13-kF-1Gi" secondAttribute="trailing" constant="10" id="c4g-SC-8lQ"/>
+                            <constraint firstAttribute="trailing" secondItem="Tc4-rA-RUD" secondAttribute="trailing" constant="10" id="eKq-Bh-53E"/>
+                            <constraint firstItem="Tc4-rA-RUD" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="gkM-Cc-E75"/>
+                            <constraint firstItem="P13-kF-1Gi" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="w2G-VF-Tio"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-303.05343511450383" y="7.746478873239437"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow.backward" catalog="system" width="128" height="95"/>
+        <image name="logo" width="608.33331298828125" height="480.66665649414062"/>
+        <namedColor name="activeBg">
+            <color red="0.22400000691413879" green="0.2199999988079071" blue="0.3059999942779541" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="backgroundColor">
+            <color red="0.13500000536441803" green="0.13699999451637268" blue="0.13699999451637268" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="inactive1">
+            <color red="0.8529999852180481" green="0.84500002861022949" blue="0.84500002861022949" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="whiteSecondry">
+            <color red="0.93699997663497925" green="0.92699998617172241" blue="0.92599999904632568" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>

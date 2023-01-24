@@ -31,9 +31,9 @@ class DemoController: UIViewController {
             else{
                 print("worked")
                 
-                let decoder = JSONDecoder()
-                let posts = try! decoder.decode(Single.self, from: json as! Data)
-                print(posts)
+//                let decoder = JSONDecoder()
+//                let posts = try! decoder.decode(Single.self, from: json as! Data)
+//                print(posts)
 //                print(json)
 //                for user in posts{
 //                    print(user.title)

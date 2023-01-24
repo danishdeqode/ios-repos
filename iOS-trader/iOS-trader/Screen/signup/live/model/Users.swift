@@ -50,10 +50,3 @@ struct Post: Codable {
 
 //=======
 
-
-
-// MARK: - Single
-struct Single: Codable {
-    let data: DataClass
-    let support: Support
-}

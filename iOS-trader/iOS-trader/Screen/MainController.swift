@@ -14,6 +14,10 @@ class ViewController: UIViewController {
 //        let nib = AppTextField()
 //        self.view.addSubview(nib)
         addCom(self)
+        
+        let user = TestUser(name: "danish", email: "danishdev64", mobile: "7777")
+        let encoded = try? JSONEncoder().encode(user)
+        print(encoded!)
         // Do any additional setup after loading the view.
     }
     @IBAction func loginAction(_ sender: UIButton){
@@ -46,3 +50,17 @@ class ViewController: UIViewController {
 
 }
 
+
+
+
+struct TestUser: Encodable{
+    let name, email, mobile: String
+    
+    
+    enum CodeKeys: String, CodeKeys{
+        case name: "namee"
+        case email, mobile
+    }
+    
+    
+}
