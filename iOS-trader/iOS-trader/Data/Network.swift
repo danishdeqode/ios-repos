@@ -20,7 +20,7 @@ class NetworkC {
                 completetion(nil, error)
             }
             else{
-                completetion(response.result.value, nil)
+                completetion(response.data, nil)
             }
 //            else if let jsonArray = response.result.value as? [[String: Any]]{
 //                completetion(jsonArray, nil)

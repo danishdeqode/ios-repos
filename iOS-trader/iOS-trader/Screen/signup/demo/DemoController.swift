@@ -18,7 +18,7 @@ class DemoController: UIViewController {
         print("calling API....")
         
         let api = NetworkC()
-        guard let url = URL(string:"https://reqres.in/api/unknown/2") else{
+        guard let url = URL(string:"https://jsonplaceholder.typicode.com/posts/") else{
             print("URL error")
             return
         }
@@ -30,6 +30,14 @@ class DemoController: UIViewController {
             }
             else{
                 print("worked")
+                print(json)
+                
+                //for single object
+//                let pp = try! JSONDecoder().decode(PostItem.self, from: json as! Data)
+                
+                //for list of objects
+                let pp = try! JSONDecoder().decode([PostItem].self, from: json as! Data)
+                print(pp)
                 
 //                let decoder = JSONDecoder()
 //                let posts = try! decoder.decode(Single.self, from: json as! Data)
@@ -66,4 +74,13 @@ class DemoController: UIViewController {
     
     
     
+}
+
+
+
+struct PostItem: Decodable{
+    let id:Int
+    let userId:Int
+    let title:String
+    let body: String
 }

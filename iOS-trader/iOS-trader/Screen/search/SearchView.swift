@@ -10,25 +10,9 @@ import UIKit
 class SearchView: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     let rainbow: [UIColor] = [.red, .yellow, .green, .orange, .blue, .purple, .magenta]
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return rainbow.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "search_item", for: indexPath)
-                cell.backgroundColor = rainbow[indexPath.item]
-        cell.layer.cornerRadius = 4
-        
-        return cell
-    }
-    // Set the spacing between sections
-    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-           return 50
-       }
-        
-    
 
+    @IBOutlet weak var searchTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         print("search view called")
@@ -36,19 +20,26 @@ class SearchView: UIViewController, UITableViewDelegate, UITableViewDataSource {
         // Do any additional setup after loading the view.
         searchTableView.delegate = self
         searchTableView.dataSource = self
+        
+        let nibName = UINib(nibName: "SearchItem", bundle: nil)
+        searchTableView.register(nibName, forCellReuseIdentifier: "custom_search_item")
     }
-    override func viewWillAppear(_ animated: Bool) {
-        navigationController?.setNavigationBarHidden(true, animated: true)
-
-    }
-    override func viewWillDisappear(_ animated: Bool) {
-        self.navigationController?.setNavigationBarHidden(false, animated: true)
-    }
-    
-    @IBOutlet weak var searchTableView: UITableView!
     
     @IBAction func back(_ sender: UIButton) {
         self.navigationController?.popViewController(animated: true)
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return rainbow.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "search_cell", for: indexPath)
+//                cell.backgroundColor = rainbow[indexPath.item]
+        cell.layer.cornerRadius = 2
+//        cell.layer.borderColor = blueColor.CGColor
+//
+        return cell
     }
     /*
     // MARK: - Navigation
