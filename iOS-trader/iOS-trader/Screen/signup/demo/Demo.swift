@@ -7,7 +7,7 @@
 
 import UIKit
 
-class DemoController: UIViewController {
+class Demo: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,22 +39,6 @@ class DemoController: UIViewController {
                 let pp = try! JSONDecoder().decode([PostItem].self, from: json as! Data)
                 print(pp)
                 
-//                let decoder = JSONDecoder()
-//                let posts = try! decoder.decode(Single.self, from: json as! Data)
-//                print(posts)
-//                print(json)
-//                for user in posts{
-//                    print(user.title)
-//                }
-                
-                
-//                let decoder = JSONDecoder()
-//                let information: Users = try! decoder.decode(Users.self, from: json as! Data)
-//                print(information.status)
-////                print(json)
-//                for user in information.data{
-//                    print(user.employeeName)
-//                }
             }
         }
     }
@@ -74,13 +58,4 @@ class DemoController: UIViewController {
     
     
     
-}
-
-
-
-struct PostItem: Decodable{
-    let id:Int
-    let userId:Int
-    let title:String
-    let body: String
 }

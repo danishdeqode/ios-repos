@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SingupLivePasswordController: UIViewController {
+class SingupLivePassword: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

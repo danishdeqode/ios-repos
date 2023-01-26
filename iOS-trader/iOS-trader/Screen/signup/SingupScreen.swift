@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SingupController: UIViewController {
+class SingupScreen: UIViewController {
     let liveHelper = SingupLiveHelper.shared
 
     override func viewDidLoad() {

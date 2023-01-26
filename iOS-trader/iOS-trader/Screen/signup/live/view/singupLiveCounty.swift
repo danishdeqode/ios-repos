@@ -8,7 +8,7 @@
 import UIKit
 import iOSDropDown
 
-class SingupLiveCountryController: UIViewController {
+class SingupLiveCountry: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

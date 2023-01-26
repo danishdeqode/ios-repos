@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SingupLiveNameController: UIViewController {
+class SingupLiveName: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

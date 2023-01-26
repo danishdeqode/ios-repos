@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SingupLiveDOBController: UIViewController {
+class SingupLiveDOB: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

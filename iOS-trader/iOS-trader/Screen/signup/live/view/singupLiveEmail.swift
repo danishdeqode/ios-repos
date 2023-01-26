@@ -15,7 +15,7 @@ import Foundation
 
 import UIKit
 
-class SingupLiveEmailController: UIViewController {
+class SingupLiveEmail: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()

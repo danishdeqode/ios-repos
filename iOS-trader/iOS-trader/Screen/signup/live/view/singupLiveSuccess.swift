@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SingupLiveSuccessController: UIViewController {
+class SingupLiveSuccess: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
