@@ -17,12 +17,13 @@ class SearchViewModel{
             return self.searchText
         }
         set(value) {
+            print("SearchValue: \(value)")
             self.searchText = value
         }
     }
 
     
-    func search(_ text:String){
+    func search(_ text:String, completion: @escaping ([PostItem])->Void){
         print("calling API....")
         
         let api = NetworkC()
@@ -44,6 +45,8 @@ class SearchViewModel{
                 // for list of objects
                 self.result = try! JSONDecoder().decode([PostItem].self, from: json as! Data)
                 
+                completion(self.result)
+
             }
         }
     }

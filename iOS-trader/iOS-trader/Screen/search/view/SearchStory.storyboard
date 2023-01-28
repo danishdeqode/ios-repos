@@ -61,32 +61,51 @@
                                 <color key="textColor" name="whiteSecondry"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="searchField:" destination="Y6W-OH-hqX" eventType="editingChanged" id="tvU-SX-gsR"/>
+                                </connections>
                             </textField>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="40" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="2ro-fd-dH9">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="92" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="2ro-fd-dH9">
                                 <rect key="frame" x="10" y="164" width="373" height="654"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="search_cell" id="Aak-4h-Pl0">
-                                        <rect key="frame" x="0.0" y="50" width="373" height="40"/>
+                                    <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="search_cell" rowHeight="92" id="Aak-4h-Pl0" customClass="SearchItemCell" customModule="iOS_trader" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="373" height="92"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Aak-4h-Pl0" id="P0s-9d-hML">
-                                            <rect key="frame" x="0.0" y="0.0" width="373" height="40"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="373" height="92"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E2F-Cb-MGy">
-                                                    <rect key="frame" x="0.0" y="0.0" width="373" height="30"/>
+                                                    <rect key="frame" x="0.0" y="8" width="373" height="84"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pmb-Ij-p54">
+                                                            <rect key="frame" x="16.000000000000004" y="15.999999999999998" width="41.333333333333343" height="19.333333333333329"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                                            <color key="textColor" name="whiteSecondry"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
                                                     <color key="backgroundColor" name="activeBg"/>
+                                                    <constraints>
+                                                        <constraint firstItem="Pmb-Ij-p54" firstAttribute="leading" secondItem="E2F-Cb-MGy" secondAttribute="leading" constant="16" id="2io-Z4-x94"/>
+                                                        <constraint firstItem="Pmb-Ij-p54" firstAttribute="top" secondItem="E2F-Cb-MGy" secondAttribute="top" constant="16" id="Mfa-ka-wWH"/>
+                                                    </constraints>
                                                 </view>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstItem="E2F-Cb-MGy" firstAttribute="leading" secondItem="P0s-9d-hML" secondAttribute="leading" id="2GK-UE-7J4"/>
-                                                <constraint firstItem="E2F-Cb-MGy" firstAttribute="top" secondItem="P0s-9d-hML" secondAttribute="top" id="JdT-x1-6cf"/>
-                                                <constraint firstAttribute="bottom" secondItem="E2F-Cb-MGy" secondAttribute="bottom" constant="10" id="RYH-LA-Zxq"/>
+                                                <constraint firstItem="E2F-Cb-MGy" firstAttribute="top" secondItem="P0s-9d-hML" secondAttribute="top" constant="8" id="JdT-x1-6cf"/>
+                                                <constraint firstAttribute="bottom" secondItem="E2F-Cb-MGy" secondAttribute="bottom" id="RYH-LA-Zxq"/>
                                                 <constraint firstAttribute="trailing" secondItem="E2F-Cb-MGy" secondAttribute="trailing" id="S8x-eh-vCd"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="itemView" destination="E2F-Cb-MGy" id="kQ1-2u-0Ut"/>
+                                            <outlet property="title" destination="Pmb-Ij-p54" id="6MM-Bl-zvv"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>

@@ -9,9 +9,28 @@ import UIKit
 
 class SearchView: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    let rainbow: [UIColor] = [.red, .yellow, .green, .orange, .blue, .purple, .magenta]
+//    let rainbow: [UIColor] = [.red, .yellow, .green, .orange, .blue, .purple, .magenta]
+    let viewModel:SearchViewModel = SearchViewModel()
+    
 
     @IBOutlet weak var searchTableView: UITableView!
+    
+    @IBAction func searchField(_ sender: UITextField) {
+        viewModel.searchValue = sender.text ?? ""
+        
+        
+        if(sender.text=="hello"){
+            callAPI()
+        }
+    }
+    
+    func callAPI(){
+        viewModel.search("", completion: {
+            data in
+            self.searchTableView.reloadData()
+        })
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,13 +49,14 @@ class SearchView: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return rainbow.count
+        return viewModel.result.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "search_cell", for: indexPath)
+        let cell:SearchItemCell = tableView.dequeueReusableCell(withIdentifier: "search_cell", for: indexPath) as! SearchItemCell
 //                cell.backgroundColor = rainbow[indexPath.item]
-        cell.layer.cornerRadius = 2
+        cell.itemView.layer.cornerRadius = 8
+        cell.title.text = viewModel.result[indexPath.item].title
 //        cell.layer.borderColor = blueColor.CGColor
 //
         return cell
