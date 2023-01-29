@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class SearchView: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -25,9 +26,11 @@ class SearchView: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
     
     func callAPI(){
+        loader.startAnimating()
         viewModel.search("", completion: {
             data in
             self.searchTableView.reloadData()
+            self.loader.stopAnimating()
         })
     }
     
@@ -39,16 +42,26 @@ class SearchView: UIViewController, UITableViewDelegate, UITableViewDataSource {
         // Do any additional setup after loading the view.
         searchTableView.delegate = self
         searchTableView.dataSource = self
-        
+//        searchTableView.emptyDataSetSource = self
+//        searchTableView.emptyDataSetDelegate = self
+//
         let nibName = UINib(nibName: "SearchItem", bundle: nil)
         searchTableView.register(nibName, forCellReuseIdentifier: "custom_search_item")
     }
+    
+    @IBOutlet weak var loader: UIActivityIndicatorView!
     
     @IBAction func back(_ sender: UIButton) {
         self.navigationController?.popViewController(animated: true)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if viewModel.result.count == 0 {
+                self.setEmptyMessage("No Records...")
+            } else {
+                self.restore()
+            }
+
         return viewModel.result.count
     }
     
@@ -57,9 +70,27 @@ class SearchView: UIViewController, UITableViewDelegate, UITableViewDataSource {
 //                cell.backgroundColor = rainbow[indexPath.item]
         cell.itemView.layer.cornerRadius = 8
         cell.title.text = viewModel.result[indexPath.item].title
+        cell.imagr.kf.setImage(with: URL(string:"https://via.placeholder.com/300/0\(indexPath.item)f/fff.png"))
 //        cell.layer.borderColor = blueColor.CGColor
 //
         return cell
     }
+    
+    
+    func setEmptyMessage(_ message: String) {
+        let messageLabel = UILabel(frame: CGRect(x: 0, y: 0, width: self.searchTableView.bounds.size.width, height: self.searchTableView.bounds.size.height))
+            messageLabel.text = message
+            messageLabel.textColor = .white
+            messageLabel.textAlignment = .center;
+            messageLabel.numberOfLines = 0
+            messageLabel.sizeToFit()
+
+        self.searchTableView.backgroundView = messageLabel
+        }
+
+        func restore() {
+            self.searchTableView.backgroundView = nil
+            self.searchTableView.separatorStyle = .singleLine
+        }
 
 }
