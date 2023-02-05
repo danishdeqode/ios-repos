@@ -8,13 +8,44 @@
 import UIKit
 
 class HomeViewController: UIViewController {
+    
+    let sections = ["Trending Movies", "Top Rated", "Popular", "Series", "Funny", "Upcoming"]
+    
+    private let homeFeedTable: UITableView = {
+        let table = UITableView(frame: .zero, style: .grouped)
+        table.register(CollectionTableViewCell.self, forCellReuseIdentifier: CollectionTableViewCell.identifier)
+        return table
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
+        view.addSubview(homeFeedTable)
+        
 
-        // Do any additional setup after loading the view.
+        let header = HomeHeaderView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 360))
+        homeFeedTable.tableHeaderView = header
+        
+        addNavIcons()
     }
+    
+    override func viewDidLayoutSubviews() {
+        homeFeedTable.frame = view.bounds
+        homeFeedTable.delegate = self
+        homeFeedTable.dataSource = self
+    }
+    
+    func addNavIcons(){
+        var logo = UIImage(named: "logo")
+        logo = logo?.withRenderingMode(.alwaysOriginal)
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image: logo, style: .done, target: self, action: nil)
+        
+        navigationItem.rightBarButtonItems = [
+            UIBarButtonItem(image: UIImage(systemName: "person"), style: .done, target: self, action: nil),
+            UIBarButtonItem(image: UIImage(systemName: "play.rectangle"), style: .done, target: self, action: nil)
+        ]
+    }
+    
     
 
     /*
@@ -27,4 +58,35 @@ class HomeViewController: UIViewController {
     }
     */
 
+}
+
+
+extension HomeViewController: UITableViewDelegate, UITableViewDataSource{
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 6
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = homeFeedTable.dequeueReusableCell(withIdentifier: CollectionTableViewCell.identifier, for: indexPath) as? CollectionTableViewCell else{
+            return UITableViewCell()
+        }
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        200
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return sections[section]
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        40
+    }
+    
 }

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0702D51B298FF5F3006EC267 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0702D51A298FF5F3006EC267 /* APICaller.swift */; };
+		0702D51E298FFB05006EC267 /* APIResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0702D51D298FFB05006EC267 /* APIResponseModel.swift */; };
+		0744F055298BFBA400EEE3CA /* CollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0744F054298BFBA400EEE3CA /* CollectionTableViewCell.swift */; };
+		0744F057298C04BA00EEE3CA /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0744F056298C04BA00EEE3CA /* HomeHeaderView.swift */; };
 		C391BE39298BDDE500CD800F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C391BE38298BDDE500CD800F /* AppDelegate.swift */; };
 		C391BE3B298BDDE500CD800F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C391BE3A298BDDE500CD800F /* SceneDelegate.swift */; };
 		C391BE3D298BDDE500CD800F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C391BE3C298BDDE500CD800F /* ViewController.swift */; };
@@ -20,6 +24,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0702D51A298FF5F3006EC267 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
+		0702D51D298FFB05006EC267 /* APIResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponseModel.swift; sourceTree = "<group>"; };
+		0744F054298BFBA400EEE3CA /* CollectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTableViewCell.swift; sourceTree = "<group>"; };
+		0744F056298C04BA00EEE3CA /* HomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderView.swift; sourceTree = "<group>"; };
 		C391BE35298BDDE500CD800F /* Netflix Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Netflix Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C391BE38298BDDE500CD800F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C391BE3A298BDDE500CD800F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +53,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0702D519298FF5CC006EC267 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				0702D51A298FF5F3006EC267 /* APICaller.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		0702D51C298FFADA006EC267 /* dto */ = {
+			isa = PBXGroup;
+			children = (
+				0702D51D298FFB05006EC267 /* APIResponseModel.swift */,
+			);
+			path = dto;
+			sourceTree = "<group>";
+		};
+		0744F053298BFB8400EEE3CA /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				0744F054298BFBA400EEE3CA /* CollectionTableViewCell.swift */,
+				0744F056298C04BA00EEE3CA /* HomeHeaderView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		C391BE2C298BDDE500CD800F = {
 			isa = PBXGroup;
 			children = (
@@ -64,6 +97,9 @@
 		C391BE37298BDDE500CD800F /* Netflix Clone */ = {
 			isa = PBXGroup;
 			children = (
+				0702D51C298FFADA006EC267 /* dto */,
+				0702D519298FF5CC006EC267 /* Service */,
+				0744F053298BFB8400EEE3CA /* Components */,
 				C391BE4C298BE49E00CD800F /* Controllers */,
 				C391BE38298BDDE500CD800F /* AppDelegate.swift */,
 				C391BE3A298BDDE500CD800F /* SceneDelegate.swift */,
@@ -161,10 +197,14 @@
 				C391BE52298BE4FE00CD800F /* SearchViewController.swift in Sources */,
 				C391BE3D298BDDE500CD800F /* ViewController.swift in Sources */,
 				C391BE39298BDDE500CD800F /* AppDelegate.swift in Sources */,
+				0702D51B298FF5F3006EC267 /* APICaller.swift in Sources */,
+				0744F057298C04BA00EEE3CA /* HomeHeaderView.swift in Sources */,
 				C391BE54298BE51100CD800F /* DownloadViewController.swift in Sources */,
 				C391BE3B298BDDE500CD800F /* SceneDelegate.swift in Sources */,
+				0702D51E298FFB05006EC267 /* APIResponseModel.swift in Sources */,
 				C391BE50298BE4EE00CD800F /* UpcomingViewController.swift in Sources */,
 				C391BE4E298BE4CC00CD800F /* HomeViewController.swift in Sources */,
+				0744F055298BFBA400EEE3CA /* CollectionTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,7 +280,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -294,7 +334,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
