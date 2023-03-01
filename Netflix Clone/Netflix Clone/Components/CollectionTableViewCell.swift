@@ -60,7 +60,7 @@ class CollectionTableViewCell: UITableViewCell {
 
 extension CollectionTableViewCell: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        guard let _ = tileList?.count else { return 2 }
+        guard let _ = tileList?.count else { return 4 }
         return tileList!.count;
     }
     

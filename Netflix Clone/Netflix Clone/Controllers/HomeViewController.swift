@@ -36,9 +36,15 @@ class HomeViewController: UIViewController {
     }
     
     func addNavIcons(){
+       
         var logo = UIImage(named: "logo")
+        let imgView = UIImageView(image: logo)
+        imgView.frame = CGRect(x: 0, y: 0, width: 10, height: 50)
         logo = logo?.withRenderingMode(.alwaysOriginal)
-        navigationItem.leftBarButtonItem = UIBarButtonItem(image: logo, style: .done, target: self, action: nil)
+        let leftItem = UIBarButtonItem()
+        leftItem.image = logo
+        navigationItem.leftBarButtonItems = [leftItem]
+       // navigationItem.leftBarButtonItem = UIBarButtonItem(image: logo, style: .done, target: self, action: nil)
         
         navigationItem.rightBarButtonItems = [
             UIBarButtonItem(image: UIImage(systemName: "person"), style: .done, target: self, action: nil),

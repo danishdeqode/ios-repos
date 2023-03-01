@@ -13,7 +13,7 @@
 		0744F057298C04BA00EEE3CA /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0744F056298C04BA00EEE3CA /* HomeHeaderView.swift */; };
 		C391BE39298BDDE500CD800F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C391BE38298BDDE500CD800F /* AppDelegate.swift */; };
 		C391BE3B298BDDE500CD800F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C391BE3A298BDDE500CD800F /* SceneDelegate.swift */; };
-		C391BE3D298BDDE500CD800F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C391BE3C298BDDE500CD800F /* ViewController.swift */; };
+		C391BE3D298BDDE500CD800F /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C391BE3C298BDDE500CD800F /* MainTabBar.swift */; };
 		C391BE40298BDDE500CD800F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C391BE3E298BDDE500CD800F /* Main.storyboard */; };
 		C391BE42298BDDE600CD800F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C391BE41298BDDE600CD800F /* Assets.xcassets */; };
 		C391BE45298BDDE600CD800F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C391BE43298BDDE600CD800F /* LaunchScreen.storyboard */; };
@@ -31,7 +31,7 @@
 		C391BE35298BDDE500CD800F /* Netflix Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Netflix Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C391BE38298BDDE500CD800F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C391BE3A298BDDE500CD800F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C391BE3C298BDDE500CD800F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C391BE3C298BDDE500CD800F /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
 		C391BE3F298BDDE500CD800F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C391BE41298BDDE600CD800F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C391BE44298BDDE600CD800F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -103,7 +103,7 @@
 				C391BE4C298BE49E00CD800F /* Controllers */,
 				C391BE38298BDDE500CD800F /* AppDelegate.swift */,
 				C391BE3A298BDDE500CD800F /* SceneDelegate.swift */,
-				C391BE3C298BDDE500CD800F /* ViewController.swift */,
+				C391BE3C298BDDE500CD800F /* MainTabBar.swift */,
 				C391BE3E298BDDE500CD800F /* Main.storyboard */,
 				C391BE41298BDDE600CD800F /* Assets.xcassets */,
 				C391BE43298BDDE600CD800F /* LaunchScreen.storyboard */,
@@ -195,7 +195,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C391BE52298BE4FE00CD800F /* SearchViewController.swift in Sources */,
-				C391BE3D298BDDE500CD800F /* ViewController.swift in Sources */,
+				C391BE3D298BDDE500CD800F /* MainTabBar.swift in Sources */,
 				C391BE39298BDDE500CD800F /* AppDelegate.swift in Sources */,
 				0702D51B298FF5F3006EC267 /* APICaller.swift in Sources */,
 				0744F057298C04BA00EEE3CA /* HomeHeaderView.swift in Sources */,
