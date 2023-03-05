@@ -36,9 +36,33 @@ class HomeViewController: UIViewController {
     }
     
     func addNavIcons(){
-        var logo = UIImage(named: "logo")
-        logo = logo?.withRenderingMode(.alwaysOriginal)
-        navigationItem.leftBarButtonItem = UIBarButtonItem(image: logo, style: .done, target: self, action: nil)
+        
+        
+        let label = UILabel()
+            
+        label.translatesAutoresizingMaskIntoConstraints = false
+            
+            label.text = "aaaaa"
+            label.backgroundColor = .green
+            
+            label.textAlignment = .left
+            
+            navigationItem.titleView = label
+            
+        if let navigationBar = navigationController?.navigationBar {
+            
+            label.widthAnchor.constraint(equalTo: navigationBar.widthAnchor, constant: 40).isActive = true
+        }
+    
+        
+//        var logo = UIImage(named: "logo")
+//        logo = logo?.withRenderingMode(.alwaysOriginal)
+//        
+//        navigationItem.leftBarButtonItem = UIBarButtonItem(image: logo, style: .plain, target: self, action: nil)
+//        navigationItem.leftBarButtonItem?.title = "Netflix"
+        
+        
+        
         
         navigationItem.rightBarButtonItems = [
             UIBarButtonItem(image: UIImage(systemName: "person"), style: .done, target: self, action: nil),

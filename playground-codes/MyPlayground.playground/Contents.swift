@@ -48,30 +48,72 @@ import UIKit
 //closure function
 
 //basic closue
-let driving = {
-    print("I'm driving in my car")
-}
-driving()
+//let driving = {
+//    print("I'm driving in my car")
+//}
+//driving()
+//
+////closue with perameter
+//let driving1 = { (place: String) in
+//    print("I'm going to \(place) in my car")
+//}
+//driving1("London")
+//
+//
+////closure return value
+//let drivingWithReturn = { (place: String) -> String in
+//    return "I'm going to \(place) in my car"
+//}
+//
+//print(drivingWithReturn("London"))
+//
+////closure as peramter
+//func travel(action: () -> Void) {
+//    print("I'm getting ready to go.")
+//    action()
+//    print("I arrived!")
+//}
+//
+//travel(action: driving)
 
-//closue with perameter
-let driving1 = { (place: String) in
-    print("I'm going to \(place) in my car")
-}
-driving1("London")
+//=====================================================
+
+//tuples
+
+//var t1 = (product:"laptop", price:80)
+//var t2 = (product:"laptop", price:80)
+//var t3 = t2
+//
+//t1==t2 //returns true
+//t2==t3 //returns true
+//
+//t3.product = "mobile"
+//t2==t3 //returns false
+//
+//
+//
+//if(t2==t3){
+//    print("equal")
+//}
+//else{
+//    print("not equal")
+//}
+//
+//print(t3)
 
 
-//closure return value
-let drivingWithReturn = { (place: String) -> String in
-    return "I'm going to \(place) in my car"
-}
+//================================================
+//operator overload
+//infix operator *+*
+//func *+*(lhs: Double, rhs: Double) -> Double {
+//    return pow(lhs, rhs)
+//}
+//
+//var x = 2*+*4
+//print(x)
 
-print(drivingWithReturn("London"))
 
-//closure as peramter
-func travel(action: () -> Void) {
-    print("I'm getting ready to go.")
-    action()
-    print("I arrived!")
-}
+//var x = 23
+//var str = "hellow \(x)"
+//var str1 = #"hellow \#(x)"#
 
-travel(action: driving)
